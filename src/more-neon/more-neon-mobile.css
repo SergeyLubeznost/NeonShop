@@ -1,0 +1,91 @@
+@media (max-width:968px) {
+    .more-neon h2{
+        font-family: "Inter",sans-serif;
+        font-weight: 600;
+        color: #D012FF;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 6px;
+    
+        margin-top: 2%;
+    }
+
+    .price-neon{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin: auto;
+        margin-top: 3%;
+    }
+
+    .card-more-neon{
+        width: 177px;
+        height: 321px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 9px;
+        margin-top: 23px;
+    }
+
+    .title-card-neon{
+        color: #4182FF;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .description-title{
+        color:white;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+    .price-neon-more{
+        color: #4182FF;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .order-price-more{
+        background-color: #D012FF;
+        border: none;
+        width: 100%;
+        height:24px;
+        font-family:"Montserat", sans-serif;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+    .card-more-neon img{
+        width: 100%; 
+        height: 112px;
+    }
+
+    .pagination_block{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pagination_block button{
+        width: 30px;
+        height: 30px;
+       background: none;
+       border: #D012FF 2px solid;
+       color:white;
+       font-family: "Inter", sans-serif;
+       font-size: 17px;
+       font-weight: 600;
+       margin-right: 18px;
+    }
+
+}

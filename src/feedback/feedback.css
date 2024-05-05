@@ -1,0 +1,151 @@
+.conf-feedback{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: -12%;
+}
+
+.custom-checkbox-feedback {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 2vw!important;
+  }
+
+  .custom-checkbox-feedback+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox-feedback+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #0057ff;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .custom-checkbox-feedback:checked+label::before {
+    border-color: #0057ff;
+    background-size: 1em;
+    background-color: #0057ff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+
+  .feedback{
+    background-image: url("./image-feedback/loon-image-high 2.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 741px;
+  }
+
+  .blur-feedback{
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blur-feedback h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+  }
+
+  .feedback-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+   margin-top: 7%;
+  }
+
+  .feedback-container p{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.4vw;
+    width: 50%;
+  }
+
+  .feedback-form{
+    width: 50%;
+    height: 447px;
+    border-radius: 45px;
+    border: 2px #0057ff solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-left: 7%;
+    overflow: hidden;
+  }
+
+  .feedback-form label{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.05vw;
+    color:#A6C5FF;
+    margin-bottom: -12%;
+  }
+  .feedback-form input{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    color:#ffffff;
+
+    border: none;
+    border-bottom: #A6C5FF 2px solid;
+    background: none;
+    width: 80%;
+  }
+  .feedback-form input:focus{
+    border: none;
+    border-bottom: #0059ff 2px solid;
+    outline: none; 
+  }
+  .feedback-form button{
+    border: none;
+    background-color:  #5181B8 ;
+    outline: none; 
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color:#ffffff;
+
+    width: 11vw;
+    height: 34px;
+
+    align-self: flex-end;
+    margin-right: 19%;
+    box-shadow: 0 0 10px #0057FF,0 0 20px #0057FF,0 0 40px #0057FF;
+  }
+
+  .custom-checkbox-label{
+    font-family: "Montserrat", sans-serif!important;
+    font-weight: 600!important;
+    font-size: 0.7vw!important;
+    color:#ffffff!important;
+}

@@ -1,0 +1,211 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap'); */
+.zaglushka{
+    width: 100%;
+    height: 70px;
+background-color: #000000;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #140101;
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    position: fixed;
+    z-index: 99;
+}
+
+.logoNeonShop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoNeonShop a{
+    text-decoration: none;
+    color: #FFD3F3;
+}
+
+.circleLogo{
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    border-color: #FFD3F3;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    margin-right: 13px;
+    background-color: #000000;
+    box-shadow: 0 0 10px 5px #FF00B8,inset 0 0 10px 5px #FF00B8; /* Эффект свечения неона */
+}
+
+.textLogo{
+    font-family: "Oregano", cursive;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 17px ;
+    font-style: normal; 
+    rotate: -15.63deg;
+    margin-top: 0% ;
+    margin-bottom: 0rem;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00e0, 0 0 30px #ff00e0, 0 0 40px #ff00e0, 0 0 70px #ff00e0, 0 0 80px #ff00e0, 0 0 100px #ff00e0, 0 0 150px #ff00e0; /* Эффект неона с размытием */
+
+}
+
+.NeonShopSPB {
+    font-size: 22px;
+    color: #F3C5FF;
+    margin-top: 31px;
+    font-family:"Inter", sans-serif;
+    font-weight: 400;
+
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+height: 70px;
+align-items: center;
+width: 20%;
+}
+
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.contacts p{
+    color: #FFFFFF;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+}
+
+ .contacts div {
+   display: flex;
+   justify-content: space-between;
+   width: 59%;
+}
+
+.btn-dropdown-header:focus {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.btn-dropdown-header:active{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.btn-dropdown-header:hover {
+    color: #D012FF;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+}
+.btn-dropdown-header {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    border: none;
+    box-shadow: none;
+    height: 62px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.btn-FAQ{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    border: none;
+    box-shadow: none;
+    height: 62px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.btn-FAQ:focus {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.btn-FAQ:hover {
+    color: #D012FF;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: left;
+    list-style: none;
+    background-color: #2D2D2D;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 0px;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 5px;
+    height: 2rem;
+}
+.dropdown-item:hover{
+   
+    color: #D012FF;
+    border-bottom: #D012FF 2px solid;
+    background: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.header-width{
+    max-width: 14;
+}
+
+
+/* Адаптив меню */
+
+.adaptive-menu{
+    display: none;
+}

@@ -1,0 +1,194 @@
+
+
+.main-section{
+    background-image: url("../image/loon-image-high 1.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.main-section-blur{
+background-color: rgba(0, 0, 0,0.4);
+width: 100%;
+height: 100%;
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.main-text-block{
+    width: 70%;
+    height: 254px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-section-blur h1{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 4rem;
+    max-width: 749px;
+    margin-left: 3rem;
+    margin-top: 0;
+}
+.main-text-prop{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 2rem;
+    max-width: 749px;
+    margin-left: 3rem;
+    margin-top: 0;
+}
+
+
+
+.main-text{
+    font-family:"Montserat", sans-serif;
+    color: white;
+    font-size: 1.375em;
+    font-weight: 400;
+    max-width: 86%;
+    height: 160px;
+    margin-left: 3rem;
+    margin-top: 2%;
+}
+
+.btn-main-form{
+    width: 30%;
+    height: 30px;
+    color: white;
+    font-family: "Montserat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #D012FF;
+    letter-spacing: 2px;
+    border: none;
+    align-self: end;
+    margin-right: 15%;
+    margin-top: -2%;
+}
+
+.btn-main-form:focus, .btn-main-form:active {
+    outline: none;
+    border: none;
+}
+
+.btn-main-form:hover{
+    background-color: #7f059e;
+}
+
+
+.modal-body, .modal-header, .modal-footer{
+    background-color: #2D2D2D;
+    border: #2D2D2D;
+}
+
+.modal-footer{
+         flex-wrap:nowrap;
+}
+
+.form-header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-header label{
+    font-family:"Montserat", sans-serif;
+    color: #A6C5FF;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2%;
+
+}
+.form-header input{
+    font-family:"Montserat", sans-serif;
+    color: #A6C5FF;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2%;
+    background: none;
+    border: none;
+    border-bottom: #D012FF 1px solid;
+    height: 2rem;
+
+}
+
+.conf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+}
+
+.conf label{
+    font-size: 0.7em;
+}
+
+.close-btn{
+    width: 50%;
+    background-color: #D012FF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+    border: none;
+    height: 28px;
+    border-radius: 5px;
+}
+.send-btn{
+    width: 50%;
+    background-color: #5181B8;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+    border: none;
+    height: 28px;
+    border-radius: 5px;
+}
+
+/* стилизация чекбокса */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .custom-checkbox:checked+label::before {
+    border-color: #D012FF;
+    background-size: 1em;
+    background-color: #D012FF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+  
+
