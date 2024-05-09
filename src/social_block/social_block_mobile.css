@@ -1,0 +1,36 @@
+@media (max-width:968px) {
+
+.blur_container_social{
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blur_container_social p{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.social{
+    color: #4182FF;
+}
+.block_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+.block_img_container img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+}

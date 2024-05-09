@@ -2458,15 +2458,16 @@ margin-bottom: 20px;
     margin-top: 37px;
 }
 .pagination_block button{
-    width: 50px;
-    height: 50px;
-   background: none;
-   border: #D012FF 2px solid;
-   color:white;
-   font-family: "Inter", sans-serif;
-   font-size: 26px;
-   font-weight: 600;
-   margin-right: 18px;
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: #D012FF 2px solid;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 18px;
+    margin-bottom: 25px;
 }
 /*!**************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon-mobile.css ***!
@@ -2559,6 +2560,213 @@ margin-bottom: 20px;
        font-size: 17px;
        font-weight: 600;
        margin-right: 18px;
+       text-align: center;
     }
 
+}
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages-mobille.css ***!
+  \************************************************************************************************/
+@media (max-width:968px) {
+
+    .our-advantages h2{
+        font-family: "Inter",sans-serif !important;
+        font-weight: 600 !important;
+        color: #D012FF !important;
+        font-size: 20px !important;
+        width: 100% !important;
+        text-align: center !important;
+        letter-spacing: 6px !important;
+    
+        margin-top: 2% !important;
+    }
+    
+    .container-advantages{
+        width: 90% !important;
+        flex-direction: column;
+    }
+
+    .container-title {
+        height: 85%!important;
+        margin-left: 8px;
+    }
+    
+    .block-advantages{
+        width: 90%!important;
+        height: 42%!important;
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-between!important;
+        align-items: center!important;
+        margin-top: 50px!important;
+    }
+    .block-advantages img{
+        width: 74px!important;
+        height: 56px!important;
+        /* margin-top: 50px!important; */
+    }
+    .block-advantages h4{
+        font-size: 16px!important;
+        text-align: right !important;
+        width: 100%!important;
+    }
+    .block-advantages p{
+        font-size: 12px!important;
+    
+        text-align: right!important;
+    }
+    
+    
+  
+
+}
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages.css ***!
+  \****************************************************************************************/
+
+.our-advantages{
+    background-color: #140101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 52vh;
+}
+
+.our-advantages h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.container-advantages{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.block-advantages{
+    width: 370px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+ .container-title h4{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+ .container-title p{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #A6C5FF;
+    font-size: 18px;
+
+    text-align: center;
+}
+
+/*!*************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/social_block/social_block.css ***!
+  \*************************************************************************************/
+.social_block{
+    background-image: url(a5f12ed9746598820875.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.blur_container_social{
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blur_container_social p{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.social{
+    color: #4182FF;
+}
+.block_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+.block_img_container img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/social_block/social_block_mobile.css ***!
+  \********************************************************************************************/
+@media (max-width:968px) {
+
+.blur_container_social{
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blur_container_social p{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.social{
+    color: #4182FF;
+}
+.block_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+.block_img_container img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
 }
