@@ -770,7 +770,7 @@ width: 20%;
 
 
 .main-section{
-    background-image: url(e69ff40f6d7ead623f36.png); 
+    background-image: url(9242390df4768dbbb99a.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1766,7 +1766,7 @@ button.swiper-pagination-bullet {
 .popular-slider{
     width: 100%;
     height: 649px;
-    background: url(ecc329f9de19afcc6715.png);
+    background: url(f06870759869c5a3edb3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2154,7 +2154,7 @@ margin-bottom: 20px;
 
 
   .feedback{
-    background-image: url(9c2552f8d861082fd841.png); 
+    background-image: url(ff991b2ca19387a9f6ef.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2265,7 +2265,7 @@ margin-bottom: 20px;
   \************************************************************************************/
 @media (max-width: 968px) {
     .feedback{
-        background-image: url(9c2552f8d861082fd841.png); 
+        background-image: url(ff991b2ca19387a9f6ef.png); 
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -2592,7 +2592,7 @@ margin-bottom: 20px;
     }
     
     .block-advantages{
-        width: 90%!important;
+        width: 100%!important;
         height: 42%!important;
         display: flex!important;
         flex-direction: row!important;
@@ -2768,5 +2768,41 @@ margin-bottom: 20px;
     width: 40px;
     height: 40px;
     margin-right: 10px;
+}
+}
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project.css ***!
+  \***********************************************************************************/
+.our-project{
+    background: #131313;
+    width: 100%;
+    height: 100vh;
+}
+.our-project h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+    position: relative;
+    top: 2%;
+}
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project-mobile.css ***!
+  \******************************************************************************************/
+@media (max-width:968px) {
+
+.our-project h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+    position: relative;
+    top: 2%;
 }
 }

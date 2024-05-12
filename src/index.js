@@ -22,3 +22,6 @@ import './Our advantages/ourAdvantages.css';
 import './social_block/social_block_img';
 import './social_block/social_block.css';
 import './social_block/social_block_mobile.css';
+import './our-project/our-project'
+import './our-project/our-project.css'
+import './our-project/our-project-mobile.css'

@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const  ImageMinimizerPlugin  =  require ( 'image-minimizer-webpack-plugin') ; 
 
 
 module.exports = {
@@ -25,6 +26,10 @@ module.exports = {
                 ],
                 test: /\.css$/
             },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                type: "asset",
+              },
             {
                 test: /\.pug$/,
                 use: 'pug-loader'
