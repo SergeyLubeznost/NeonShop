@@ -11,4 +11,22 @@
     position: relative;
     top: 2%;
 }
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 10px;
+    width: 76vw;
+    margin-top: 20px;
+    align-items: center; 
+    margin-right: auto; 
+    margin-left: auto;
+ }
+
+  
+.container-grid img{
+    width: 150px;
+    height: 210px;
+    margin-right: 0px;
+  }
 }

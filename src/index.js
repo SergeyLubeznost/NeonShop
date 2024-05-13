@@ -25,3 +25,6 @@ import './social_block/social_block_mobile.css';
 import './our-project/our-project'
 import './our-project/our-project.css'
 import './our-project/our-project-mobile.css'
+import './about-us/about-us-mobile.css'
+import './about-us/about-us.css'
+import './about-us/about-us.js'

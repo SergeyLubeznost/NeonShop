@@ -52,4 +52,13 @@
         width: 57vw;
         height: 100%;
     }
+
+    .swiper-button-next{
+      top:-43%;
+      right:-33%;
+    }
+    .swiper-button-prev{
+      top:-53%;
+      left:-36%;
+    }
 }

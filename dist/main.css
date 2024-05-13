@@ -775,7 +775,7 @@ width: 20%;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 .main-section-blur{
@@ -1881,11 +1881,11 @@ button.swiper-pagination-bullet {
 
   .swiper-button-next{
     top:-43%;
-    right:-31%;
+    right:-32%;
   }
   .swiper-button-prev{
     top:-50%;
-    left:-34%;
+    left:-33%;
   }
 
   .modal-body img{
@@ -1963,6 +1963,15 @@ button.swiper-pagination-bullet {
       .swiper {
         width: 57vw;
         height: 100%;
+    }
+
+    .swiper-button-next{
+      top:-43%;
+      right:-33%;
+    }
+    .swiper-button-prev{
+      top:-53%;
+      left:-36%;
     }
 }
 /*!************************************************************************************!*\
@@ -2415,7 +2424,7 @@ margin-bottom: 20px;
 .description-title{
     color:white;
     font-family: "Inter", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 0px;
     font-size: 14px;
@@ -2625,11 +2634,11 @@ margin-bottom: 20px;
   \****************************************************************************************/
 
 .our-advantages{
-    background-color: #140101;
+    background-color: #080808;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 52vh;
+    min-height:85vh;
 }
 
 .our-advantages h2{
@@ -2776,7 +2785,11 @@ margin-bottom: 20px;
 .our-project{
     background: #131313;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
 }
 .our-project h2{
     font-family: "Inter",sans-serif;
@@ -2786,9 +2799,28 @@ margin-bottom: 20px;
     width: 100%;
     text-align: center;
     letter-spacing: 6px;
-    position: relative;
-    top: 2%;
+    margin-top: 2%;
 }
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 339px 339px 339px;
+    grid-gap: 10px;
+    width: 65vw;
+    margin-top: 38px;
+    align-items: center; 
+    margin-right: auto; 
+    margin-left: auto;
+ }
+
+  
+.container-grid img{
+   width: 339px;
+   height: 452px;
+  margin-right: 13px;
+  }
+
+
 /*!******************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project-mobile.css ***!
   \******************************************************************************************/
@@ -2805,4 +2837,74 @@ margin-bottom: 20px;
     position: relative;
     top: 2%;
 }
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 10px;
+    width: 76vw;
+    margin-top: 20px;
+    align-items: center; 
+    margin-right: auto; 
+    margin-left: auto;
+ }
+
+  
+.container-grid img{
+    width: 150px;
+    height: 210px;
+    margin-right: 0px;
+  }
+}
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/about-us/about-us-mobile.css ***!
+  \************************************************************************************/
+
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/about-us/about-us.css ***!
+  \*****************************************************************************/
+.about-us{
+    background-image: url(89c670f0a1097d29bb05.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.blur-about-us{
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+    height: 100%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.blur-about-us h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.infoOfUs {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.infoOfUs p{
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 20px;
+   
 }
