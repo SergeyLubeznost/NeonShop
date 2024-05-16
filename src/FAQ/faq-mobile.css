@@ -1,0 +1,43 @@
+@media (max-width:968px) {
+
+    .faq-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #161616;
+        min-height: 500px;
+    }
+.faq-section .title-faq{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.question-answer{
+    width:90%;
+    margin:auto;
+}
+
+.accordion-button {
+    font-size: 14px!important;
+    border-top: #161616 1px solid ;
+    border-left:  #161616 1px solid ;
+    border-right:  #161616 1px solid ;
+}
+.bottom-faq{
+    border-left:  #161616  1px solid !important;
+    border-right:  #161616  1px solid!important;
+    border-bottom: 0.5px rgba(255, 255, 255, 0.8) solid !important;
+}
+
+.accordion{
+border: #161616  1px solid;
+
+}
+}

@@ -2,3 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./header/header.css);
+@import url(./header/header-mobile.css);
+@import url(./main-section/main-section.css);
+@import url(./main-section/main-section-mobile.css);
+/* @import url(./slider-popular/modal-swiper.css);
+@import url(./slider-popular/pop-slider-mobile.css);
+@import url(./slider-popular/pop-slider.css); */
+@import url(./ourServices/our-services.css);
+@import url(./ourServices/our-services-mobile.css);
+@import url(./feedback/feedback.css);
+@import url(./feedback/feedback-mobile.css);
+@import url(./more-neon/more-neon-mobile.css);
+@import url(./more-neon/more-neon.css);
+@import url(./Our\ advantages/ourAdvantages.css);
+@import url(./Our\ advantages/ourAdvantages-mobille.css);
+@import url(./social_block/social_block.css);
+@import url(./social_block/social_block_mobile.css);
+@import url(./our-project/our-project.css);
+@import url(./our-project/our-project-mobile.css);
+@import url(./about-us/about-us.css);
+@import url(./about-us/about-us-mobile.css);
+@import url(./FAQ/faq.css);
+@import url(./FAQ/faq-mobile.css);
+
+

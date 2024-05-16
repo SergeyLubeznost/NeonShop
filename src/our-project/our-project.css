@@ -22,11 +22,14 @@
     display: grid;
     grid-template-columns: 339px 339px 339px;
     grid-gap: 10px;
-    width: 65vw;
+    width: 100%;
     margin-top: 38px;
-    align-items: center; 
-    margin-right: auto; 
+    align-items: center;
+    margin-right: auto;
     margin-left: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
  }
 
   

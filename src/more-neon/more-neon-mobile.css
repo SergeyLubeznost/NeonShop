@@ -1,80 +1,80 @@
 @media (max-width:968px) {
     .more-neon h2{
-        font-family: "Inter",sans-serif;
-        font-weight: 600;
-        color: #D012FF;
-        font-size: 20px;
-        width: 100%;
-        text-align: center;
-        letter-spacing: 6px;
+        font-family: "Inter",sans-serif!important;
+        font-weight: 600!important;
+        color: #D012FF!important;
+        font-size: 20px!important;
+        width: 100%!important;
+        text-align: center!important;
+        letter-spacing: 6px!important;
     
-        margin-top: 2%;
+        margin-top: 2%!important;
     }
 
     .price-neon{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 90vw;
-        margin: auto;
-        margin-top: 3%;
+        display: flex!important;
+        justify-content: center!important;
+        flex-wrap: wrap!important;
+        width: 90vw!important;
+        margin: auto!important;
+        margin-top: 3%!important;
     }
 
     .card-more-neon{
-        width: 177px;
-        height: 321px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-right: 9px;
-        margin-top: 23px;
+        width: 177px!important;
+        height: 321px!important;
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: flex-start!important;
+        margin-right: 9px!important;
+        margin-top: 23px!important;
     }
 
     .title-card-neon{
-        color: #4182FF;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
+        color: #4182FF!important;
+        font-family: "Inter", sans-serif!important;
+        font-weight: 400!important;
+        font-size: 16px!important;
     }
 
     .description-title{
-        color:white;
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-        text-align: left;
-        margin-bottom: 0px;
+        color:white!important;
+        font-family: "Inter", sans-serif!important;
+        font-weight: 700!important;
+        text-align: left!important;
+        margin-bottom: 0px!important;
     }
 
     .price-neon-more{
-        color: #4182FF;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
+        color: #4182FF!important;
+        font-family: "Inter", sans-serif!important;
+        font-weight: 400!important;
+        font-size: 16px!important;
     }
 
     .order-price-more{
-        background-color: #D012FF;
-        border: none;
-        width: 100%;
-        height:24px;
-        font-family:"Montserat", sans-serif;
-        color: white;
-        font-size: 12px;
-        font-weight: 400;
-        border-radius: 5px;
+        background-color: #D012FF!important;
+        border: none!important;
+        width: 100%!important;
+        height:24px!important;
+        font-family:"Montserat", sans-serif!important;
+        color: white!important;
+        font-size: 12px!important;
+        font-weight: 400!important;
+        border-radius: 5px!important;
     }
 
     .card-more-neon img{
-        width: 100%; 
-        height: 112px;
+        width: 100%!important; 
+        height: 112px!important;
     }
 
     .pagination_block{
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%!important;
+        height: 50px!important;
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
     }
     .pagination_block button{
         width: 30px;
