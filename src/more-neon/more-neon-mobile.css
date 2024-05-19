@@ -15,13 +15,13 @@
         display: flex!important;
         justify-content: center!important;
         flex-wrap: wrap!important;
-        width: 90vw!important;
+        width: 100%!important;
         margin: auto!important;
         margin-top: 3%!important;
     }
 
     .card-more-neon{
-        width: 177px!important;
+        width: 160px!important;
         height: 321px!important;
         display: flex!important;
         flex-direction: column!important;
