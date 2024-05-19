@@ -6,9 +6,6 @@
 @import url(./header/header-mobile.css);
 @import url(./main-section/main-section.css);
 @import url(./main-section/main-section-mobile.css);
-/* @import url(./slider-popular/modal-swiper.css);
-@import url(./slider-popular/pop-slider-mobile.css);
-@import url(./slider-popular/pop-slider.css); */
 @import url(./ourServices/our-services.css);
 @import url(./ourServices/our-services-mobile.css);
 @import url(./feedback/feedback.css);
@@ -25,5 +22,7 @@
 @import url(./about-us/about-us-mobile.css);
 @import url(./FAQ/faq.css);
 @import url(./FAQ/faq-mobile.css);
+@import url(./footer/footer.css);
+@import url(./footer/footer-mobile.css);
 
 

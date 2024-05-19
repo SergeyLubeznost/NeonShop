@@ -1,0 +1,162 @@
+@media (max-width: 968px) {
+    footer{
+        width: 100%;
+        background-color: #252223;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        min-height: 641px;
+        padding-bottom: 20px;
+    }
+
+    .logoblock{
+        width: 100%;
+        border-bottom: #D012FF 0px solid;
+        height: 100px;
+        padding-bottom: 31px;
+
+    }
+    .container-logo{
+        width: 220px;
+    }
+    .circleLogo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-right: 10px;
+        position: relative;
+        bottom: -23%;
+    
+    }
+
+    .textLogo {
+        font-size: 14px;
+    }
+    .NeonShopSPB {
+        font-size: 18px;
+        margin-top: 23px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: -1.5vh;
+    }
+    .container-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 521px;
+        padding-top: 15px;
+    }
+
+    .menu-navigation{
+        display: none;
+    }
+
+    .feedback-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .feedback-footer h2{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        width: 100%;
+        font-size: 20px;
+        border-bottom: #D012FF 2px solid;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .feedback-footer input{
+        width: 100%;
+        background:#585858;
+        height: 40px;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        border: none;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    .feedback-footer input::placeholder{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        border: none;
+        
+    }
+
+    .confooter{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        width: 100%;
+        overflow:visible;
+        margin-bottom: 13px;
+    }
+
+    .feedback-footer form button{
+        align-self: flex-end;
+         width: 168px;
+         height: 29px;
+         border: none;
+         background-color: #4182ff;
+         color: #ffffff;
+         font-family: "Roboto", sans-serif;
+         font-weight: 400;
+         font-size: 16px;
+         position: relative;
+         right: 0%;
+     }
+     .feedback-footer input{
+      
+        margin-bottom: 17px;
+        
+    }
+
+    .connect-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .connect-us h2{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        width: 100%;
+        font-size: 20px;
+        border-bottom: #D012FF 2px solid;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .connect-us div{
+      padding-top: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 160px;
+     width: 100%;
+     text-align: center;
+    }
+    .connect-us div a{
+    
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    border: none;
+    text-decoration: none;
+    
+    }
+}

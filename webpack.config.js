@@ -1,9 +1,4 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserWebpackPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const  ImageMinimizerPlugin  =  require ( 'image-minimizer-webpack-plugin') ; 
-
-
 module.exports = {
     entry: './src/index.js',
     mode: "development",
@@ -12,11 +7,13 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin(),
-        new TerserWebpackPlugin()
+        // убираем TerserWebpackPlugin из плагинов
+        //new TerserWebpackPlugin(),
     ],
-    optimization: {
-        minimizer: [new TerserWebpackPlugin({})]
-    },
+    // убираем TerserWebpackPlugin из оптимизации
+    //optimization: {
+    //    minimizer: [new TerserWebpackPlugin({})]
+    //},
     module: {
         rules: [
             {
