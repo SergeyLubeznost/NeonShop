@@ -102,9 +102,9 @@ popularPrice.forEach((item) => {
     <button class="order" data-id="${item.id}">Заказать</button>
   `;
   swiperWrapper.appendChild(slide);
-
   const orderButton = slide.querySelector('.order');
   orderButton.addEventListener('click', () => openModal(item.id));
+
 });
 
 // Создаем элементы для кнопок навигации и пагинации
@@ -127,7 +127,7 @@ sliderBlock.appendChild(swiperContainer);
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  speed: 700,
+  speed: 500,
   spaceBetween: 10,
   loop: true,
   autoplay: false, // Остановка автоматического переключения
@@ -158,6 +158,9 @@ orderButtons.forEach(button => {
   });
 });
 
+// const botToken = '7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU';
+// const chatId = '-4245946360';
+
 function openModal(productId) {
   const product = popularPrice.find(item => item.id === productId);
 
@@ -185,14 +188,14 @@ function openModal(productId) {
                   <span class="visually-hidden">Next</span>
               </button>
           </div>
-          <p class="decription-product"><strong>Основание:</strong> ${product.discription || 'Описание отсутствует'}</p>
+          <p class="decription-product"><strong>Основание:</strong> ${product.description || 'Описание отсутствует'}</p>
           <p class="decription-product"><strong>Размер основания:</strong> ${product.size || 'Размер не указан'}</p>
           <p class="decription-product"><strong>Цена:</strong> ${product.price || 'Цена не указана'}</p>
-          <form class="form-header" action="">
-              <label for="name">Ваше Имя</label>
-              <input id="name" type="text" placeholder="Введите Имя">
-              <label for="phone">Ваш телефон</label>
-              <input id="phone" type="tel" placeholder="Введите телефон">
+          <form class="form-header" id="modal-form">
+              <label for="namePrice">Ваше Имя</label>
+              <input id="namePrice" type="text" placeholder="Введите Имя">
+              <label for="phonePrice">Ваш телефон</label>
+              <input id="phonePrice" type="tel" placeholder="Введите телефон">
           </form>
       `;
 
@@ -205,10 +208,73 @@ function openModal(productId) {
       });
 
       myModal.show();
+
+      const submitButton = document.querySelector('#send-price');
+console.log(submitButton);
+
+
+submitButton.addEventListener('click', async function(event) {
+  console.log(submitButton);
+  const botToken = '7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU';
+  const chatId = '-4245946360';
+    
+    const productName = product.title || 'Название не указано';
+    const productDescription = product.description || 'Описание отсутствует';
+    const name = document.getElementById('namePrice').value;
+    const phone = document.getElementById('phonePrice').value;
+console.log(name);
+    const data = {
+        productName,
+        productDescription,
+        name,
+        phone
+    };
+
+    // Sending data to the server
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${JSON.stringify(data)}`;
+
+    const toastContainer = document.querySelector('.toast-container');
+
+    try {
+        const response = await fetch(url, { method: 'GET' });
+        const responseData = await response.json();
+
+        if (responseData.ok) {
+            const toast = document.createElement('div');
+            toast.className = 'toast fade show';
+            toast.setAttribute('role', 'alert');
+            toast.setAttribute('aria-live', 'assertive');
+            toast.setAttribute('aria-atomic', 'true');
+
+            toast.innerHTML = `
+                <div class="toast-header">
+                    <strong class="me-auto">Ваша заявка ${data.name}</strong>
+                    <small>${new Date().toLocaleTimeString()}</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                   Успешно отправлена
+                </div>`;
+
+            toastContainer.appendChild(toast);
+
+            new bootstrap.Toast(toast).show();
+            myModal.hide();
+        } else {
+            console.error('Ошибка при отправке данных в Telegram.');
+        }
+    } catch (error) {
+        console.error('Ошибка при выполнении запроса:', error);
+    }
+});
+
+
   } else {
-      console.error('Продукт с указанным productId не найден.');
+      
   }
 }
+
+
 
 
 

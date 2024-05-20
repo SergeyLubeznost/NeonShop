@@ -47,21 +47,21 @@
 
       .slider-show {
         height: 354px;
-        width: 60vw;
+        width: 59vw;
         margin: auto;
         margin-bottom: -40px;
       }
       .swiper {
-        width: 57vw;
+        width: 70vw;
         height: 100%;
     }
 
     .swiper-button-next{
       top:-43%;
-      right:-36%;
+      right: -43%;
     }
     .swiper-button-prev{
       top:-52.2%;
-      left:-38%;
+      left:-43%;
     }
 }

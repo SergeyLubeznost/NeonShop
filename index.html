@@ -189,7 +189,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="close-btn" data-bs-dismiss="modal">Закрыть</button>
-            <button type="button" class="send-btn">Отправить</button>
+            <button id="send-price" type="button" class="send-btn">Отправить</button>
           </div>
         </div>
       </div>
@@ -243,19 +243,21 @@
           <input type="phone" name="phone" id="phone-feedback">
 
           <div class="conf-feedback">
-            <input id="chekcbox-feedback" class="custom-checkbox-feedback" type="checkbox">
+            <input checked id="chekcbox-feedback" class="custom-checkbox-feedback" type="checkbox">
             <label class="custom-checkbox-label" for="chekcbox-feedback">Я согласен(-на) на обработку персональных
               данных</label>
           </div>
 
-          <button>
+          <button id="submit-btn">
             отправить
           </button>
         </form>
       </div>
     </div>
+    <div class="toast-container"></div>
   </section>
 
+  
 
   <section class="more-neon">
     <h2>Больше неона</h2>
@@ -305,7 +307,17 @@
   <section class="our-project">
     <h2>Ваши проекты нас вдохновляют!</h2>
     <div id="grid-project" class="container-grid">
-
+      <img src="OUR-PROJECT-IMG/20231106_224430.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/20231106_224847.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/20231202_160817.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/20231230_185204.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/20240130_195457.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/20240207_184254.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/20240225_132526.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/20240314_002108.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/IMG_20231115_162512_239.jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/единорог 200х400мм   2000тр  .jpg" class="grid-image">
+      <img src="OUR-PROJECT-IMG/морожено 200х400мм   2000тр.jpg" class="grid-image">
     </div>
   </section>
   <section class="about-us">
@@ -380,6 +392,7 @@
       </div>
     </div>
   </section>
+
 
   <footer>
     <div class="logoblock">
