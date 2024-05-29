@@ -210,70 +210,80 @@ function openModal(productId) {
       myModal.show();
 
       const submitButton = document.querySelector('#send-price');
-console.log(submitButton);
 
+      // Удаляем предыдущий обработчик события, если он существует
+      submitButton.removeEventListener('click', handleSubmitData);
 
-submitButton.addEventListener('click', async function(event) {
-  console.log(submitButton);
-  const botToken = '7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU';
-  const chatId = '-4245946360';
-    
-    const productName = product.title || 'Название не указано';
-    const productDescription = product.description || 'Описание отсутствует';
-    const name = document.getElementById('namePrice').value;
-    const phone = document.getElementById('phonePrice').value;
-console.log(name);
-    const data = {
-        productName,
-        productDescription,
-        name,
-        phone
-    };
+      submitButton.addEventListener('click', handleSubmitData);
 
-    // Sending data to the server
-    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${JSON.stringify(data)}`;
+      async function handleSubmitData(event) {
+       const botToken = '7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU';
+const chatId = '-4245946360';
+        
+        const name = document.getElementById('namePrice').value;
+        const phone = document.getElementById('phonePrice').value;
 
-    const toastContainer = document.querySelector('.toast-container');
+        const data = {
+            productName: product.title || 'Название не указано',
+            productDescription: product.description || 'Описание отсутствует',
+            price: product.price  || 'Описание отсутствует',
+            size: product.size  || 'Описание отсутствует',
+            name,
+            phone
+        };
 
-    try {
-        const response = await fetch(url, { method: 'GET' });
-        const responseData = await response.json();
+        const dataCorrect = `Новая заявка:
+        Продукт: ${data.productName}\n
+        Размер: ${data.size}\n
+        Цена: ${data.price}\n
+        Имя: ${data.name}\n
+        Телефон: ${data.phone}`;
 
-        if (responseData.ok) {
-            const toast = document.createElement('div');
-            toast.className = 'toast fade show';
-            toast.setAttribute('role', 'alert');
-            toast.setAttribute('aria-live', 'assertive');
-            toast.setAttribute('aria-atomic', 'true');
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(dataCorrect)}`;
 
-            toast.innerHTML = `
-                <div class="toast-header">
-                    <strong class="me-auto">Ваша заявка ${data.name}</strong>
-                    <small>${new Date().toLocaleTimeString()}</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                   Успешно отправлена
-                </div>`;
+        const toastContainer = document.querySelector('.toast-container');
+        
+        try {
+            const response = await fetch(url, { method: 'GET' });
+            const responseData = await response.json();
+            
+            if (responseData.ok) {
+                const toast = document.createElement('div');
+                toast.className = 'toast fade show';
+                toast.setAttribute('role', 'alert');
+                toast.setAttribute('aria-live', 'assertive');
+                toast.setAttribute('aria-atomic', 'true');
 
-            toastContainer.appendChild(toast);
+                toast.innerHTML = `
+                    <div class="toast-header">
+                        <strong class="me-auto">Ваша заявка ${name}</strong>
+                        <small>${new Date().toLocaleTimeString()}</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Успешно отправлена
+                    </div>`;
 
-            new bootstrap.Toast(toast).show();
-            myModal.hide();
-        } else {
-            console.error('Ошибка при отправке данных в Telegram.');
+                toastContainer.appendChild(toast);
+
+                    // Удаляем предыдущий обработчик события, если он существует
+      submitButton.removeEventListener('click', handleSubmitData);
+
+                new bootstrap.Toast(toast).show();
+                myModal.hide();
+                    // Удаляем предыдущий обработчик события, если он существует
+      submitButton.removeEventListener('click', handleSubmitData);
+            } else {
+                console.error('Ошибка при отправке данных в Telegram.');
+            }
+        } catch (error) {
+            console.error('Ошибка при выполнении запроса:', error);
         }
-    } catch (error) {
-        console.error('Ошибка при выполнении запроса:', error);
     }
-});
-
-
   } else {
-      
+      // Обработка когда продукт не найден
   }
 }
-
 
 
 
