@@ -1,0 +1,2469 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (1) ***!
+  \*********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (2) ***!
+  \*********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/normalize.css/normalize.css ***!
+  \********************************************************************************************/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/header/header.css ***!
+  \*************************************************************************/
+/* @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap'); */
+.zaglushka{
+    width: 100%;
+    height: 70px;
+background-color: #000000;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #140101;
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    position: fixed;
+    z-index: 99;
+}
+
+.logoNeonShop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoNeonShop a{
+    text-decoration: none;
+    color: #FFD3F3;
+}
+
+.circleLogo{
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    border-color: #FFD3F3;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    margin-right: 13px;
+    background-color: #000000;
+    box-shadow: 0 0 10px 5px #FF00B8,inset 0 0 10px 5px #FF00B8; /* Эффект свечения неона */
+}
+
+.textLogo{
+    font-family: "Oregano", cursive;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 17px ;
+    font-style: normal; 
+    rotate: -15.63deg;
+    margin-top: 0% ;
+    margin-bottom: 0rem;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00e0, 0 0 30px #ff00e0, 0 0 40px #ff00e0, 0 0 70px #ff00e0, 0 0 80px #ff00e0, 0 0 100px #ff00e0, 0 0 150px #ff00e0; /* Эффект неона с размытием */
+
+}
+
+.NeonShopSPB {
+    font-size: 22px;
+    color: #F3C5FF;
+    margin-top: 31px;
+    font-family:"Inter", sans-serif;
+    font-weight: 400;
+
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+height: 70px;
+align-items: center;
+width: 20%;
+}
+
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.contacts p{
+    color: #FFFFFF;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+}
+
+ .contacts div {
+   display: flex;
+   justify-content: space-between;
+   width: 59%;
+}
+
+.btn-dropdown-header:focus {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.btn-dropdown-header:active{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.btn-dropdown-header:hover {
+    color: #D012FF;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+}
+.btn-dropdown-header {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    border: none;
+    box-shadow: none;
+    height: 62px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.btn-FAQ{
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    border: none;
+    box-shadow: none;
+    height: 62px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.btn-FAQ:focus {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.btn-FAQ:hover {
+    color: #D012FF;
+    background-color: #000000;
+    border-color: #000000;
+    box-shadow: none;
+    outline: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: left;
+    list-style: none;
+    background-color: #2D2D2D;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 0px;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 5px;
+    height: 2rem;
+}
+.dropdown-item:hover{
+   
+    color: #D012FF;
+    border-bottom: #D012FF 2px solid;
+    background: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.header-width{
+    max-width: 14;
+}
+
+
+/* Адаптив меню */
+
+.adaptive-menu{
+    display: none;
+}
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/header/header-mobile.css ***!
+  \********************************************************************************/
+@media (max-width: 968px) {
+    header{
+        display: none;
+    }
+    .adaptive-menu{
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+    nav{
+        width: 100%;
+    }
+    .navbar {
+       
+        padding-top: 0rem; 
+        padding-bottom: 0rem;
+    }
+
+    .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        background-color: black;
+    }
+    .navbar-nav {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .circleLogo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-right: 10px;
+        position: relative;
+        bottom: -23%;
+    
+    }
+
+    .textLogo {
+        font-size: 14px;
+    }
+    .NeonShopSPB {
+        font-size: 18px;
+        margin-top: 23px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: -1.5vh;
+    }
+
+    .navbar-collapse {
+        background-color: #252223;
+        /* padding-top: 2vh; */
+    }
+
+    .nav-link{
+        color:white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+    
+  
+    .container-fluid{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .logoNeonShop{
+        margin-left: 1rem;
+    }
+
+    .call-order{
+        color:#4182FF;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 41px;
+    }
+    .call-order p{
+       margin-bottom: 0.5rem;
+    }
+
+    .social-connection{
+        margin-top: 8.18px;
+        margin-bottom: 30px;
+    }
+    .social-connection img{
+        margin-right: 11px;
+    }
+
+}
+/*!*************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/main-section/main-section.css ***!
+  \*************************************************************************************/
+
+
+.main-section{
+    background-image: url(9242390df4768dbbb99a.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-section-blur{
+background-color: rgba(0, 0, 0,0.4);
+width: 100%;
+height: 100%;
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.main-text-block{
+    width: 70%;
+    height: 254px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-section-blur h1{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 4rem;
+    max-width: 749px;
+    margin-left: 3rem;
+    margin-top: 0;
+}
+.main-text-prop{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 2rem;
+    max-width: 749px;
+    margin-left: 3rem;
+    margin-top: 0;
+}
+
+
+
+.main-text{
+    font-family:"Montserat", sans-serif;
+    color: white;
+    font-size: 1.375em;
+    font-weight: 400;
+    max-width: 86%;
+    height: 160px;
+    margin-left: 3rem;
+    margin-top: 2%;
+}
+
+.btn-main-form{
+    width: 30%;
+    height: 30px;
+    color: white;
+    font-family: "Montserat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #D012FF;
+    letter-spacing: 2px;
+    border: none;
+    align-self: end;
+    margin-right: 15%;
+    margin-top: -2%;
+}
+
+.btn-main-form:focus, .btn-main-form:active {
+    outline: none;
+    border: none;
+}
+
+.btn-main-form:hover{
+    background-color: #7f059e;
+}
+
+
+.modal-body, .modal-header, .modal-footer{
+    background-color: #2D2D2D;
+    border: #2D2D2D;
+}
+
+.modal-footer{
+         flex-wrap:nowrap;
+}
+
+.form-header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-header label{
+    font-family:"Montserat", sans-serif;
+    color: #A6C5FF;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2%;
+
+}
+.form-header input{
+    font-family:"Montserat", sans-serif;
+    color: #A6C5FF;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2%;
+    background: none;
+    border: none;
+    border-bottom: #D012FF 1px solid;
+    height: 2rem;
+
+}
+
+.conf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+}
+
+.conf label{
+    font-size: 0.7em;
+}
+
+.close-btn{
+    width: 50%;
+    background-color: #D012FF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+    border: none;
+    height: 28px;
+    border-radius: 5px;
+}
+.send-btn{
+    width: 50%;
+    background-color: #5181B8;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1em;
+    border: none;
+    height: 28px;
+    border-radius: 5px;
+}
+
+/* стилизация чекбокса */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .custom-checkbox:checked+label::before {
+    border-color: #D012FF;
+    background-size: 1em;
+    background-color: #D012FF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27%3e%3cpath fill=%27%23fff%27 d=%27M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z%27/%3e%3c/svg%3e");
+  }
+
+  
+
+
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/main-section/main-section-mobile.css ***!
+  \********************************************************************************************/
+@media (max-width:968px) {
+    .main-section{
+        height: 500px;
+    }
+    .main-section h1{
+        font-size: 29px;
+        font-weight: 500;
+        margin-top: 27px;
+        margin-left: 1rem;
+        width: 80%;
+    }
+
+    .main-text-prop {
+        font-size: 1rem;
+        font-weight: 400;
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+
+    .main-text-block{
+        width: 100%;
+        height: 149px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .main-text{
+        font-family:"Montserat", sans-serif;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 80%;
+        height: 126px;
+        margin-left: 1rem;
+        margin-top: 2%;
+    }
+
+    .btn-main-form{
+        width: 135px;
+        height: 20px;
+        color: white;
+        font-family: "Montserat", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        border-radius: 5px;
+        background-color: #D012FF;
+        letter-spacing: 2px;
+        border: none;
+        align-self: end;
+        margin-right: 15%;
+        margin-top: -7%;
+    }
+}
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services.css ***!
+  \************************************************************************************/
+.our-services{
+    background-color: #080808;
+    width: 100%;
+    height: 531px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.our-services h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 2%;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.services {
+    width: 245px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+    border-radius: 5px;
+    border: #D012FF 1px solid;
+    
+}
+
+.services h3{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    color: #4182FF;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.services p{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    color: #4182FF;
+    font-size: 18px;
+  text-align: center;
+}
+
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services-mobile.css ***!
+  \*******************************************************************************************/
+@media (max-width:968px) {
+.our-services{
+    background-color: #080808;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.our-services h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.services {
+    width: 100%;
+    height: 133px;
+   margin-bottom: 26px;
+   box-shadow: 0 0 0px #000000, 0 0 0px #000000, 0 0 0px #000000, 0 0 0px #000000, inset 0 0 10px #D012FF,inset 0 0 80px #D012FF;
+    animation: glowing 1.5s infinite;
+}
+
+
+.services h3{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    color: #4182FF;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.services img{
+   width: 60px;
+}
+
+.services p{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    color: #4182FF;
+    font-size: 14px;
+  text-align: center;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000, 0 0 60px #000000;
+    }
+    50% {
+        box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000, 0 0 80px #000000;
+    }
+    100% {
+        box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000, 0 0 60px #000000;
+    }
+}
+
+}
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback.css ***!
+  \*****************************************************************************/
+.conf-feedback{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: -12%;
+}
+
+.custom-checkbox-feedback {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 2vw!important;
+  }
+
+  .custom-checkbox-feedback+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox-feedback+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #0057ff;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .custom-checkbox-feedback:checked+label::before {
+    border-color: #0057ff;
+    background-size: 1em;
+    background-color: #0057ff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27%3e%3cpath fill=%27%23fff%27 d=%27M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z%27/%3e%3c/svg%3e");
+  }
+
+
+  .feedback{
+    background-image: url(ff991b2ca19387a9f6ef.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 741px;
+  }
+
+  .blur-feedback{
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blur-feedback h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+  }
+
+  .feedback-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+   margin-top: 7%;
+  }
+
+  .feedback-container p{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.4vw;
+    width: 50%;
+  }
+
+  .feedback-form{
+    width: 50%;
+    height: 447px;
+    border-radius: 45px;
+    border: 2px #0057ff solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-left: 7%;
+    overflow: hidden;
+  }
+
+  .feedback-form label{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.05vw;
+    color:#A6C5FF;
+    margin-bottom: -12%;
+  }
+  .feedback-form input{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    color:#ffffff;
+
+    border: none;
+    border-bottom: #A6C5FF 2px solid;
+    background: none;
+    width: 80%;
+  }
+  .feedback-form input:focus{
+    border: none;
+    border-bottom: #0059ff 2px solid;
+    outline: none; 
+  }
+  .feedback-form button{
+    border: none;
+    background-color:  #5181B8 ;
+    outline: none; 
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    color:#ffffff;
+
+    width: 11vw;
+    height: 34px;
+
+    align-self: flex-end;
+    margin-right: 19%;
+    box-shadow: 0 0 10px #0057FF,0 0 20px #0057FF,0 0 40px #0057FF;
+  }
+
+  .custom-checkbox-label{
+    font-family: "Montserrat", sans-serif!important;
+    font-weight: 600!important;
+    font-size: 0.7vw!important;
+    color:#ffffff!important;
+}
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback-mobile.css ***!
+  \************************************************************************************/
+@media (max-width: 968px) {
+    .feedback{
+        background-image: url(ff991b2ca19387a9f6ef.png); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 390px;
+      }
+   
+    .blur-feedback h2{
+        font-family: "Inter",sans-serif;
+        font-weight: 600;
+        color: #D012FF;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 6px;
+    
+        margin-top: 4%;
+      }
+
+      .feedback-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+       margin-top: 7%;
+      }
+
+      .feedback-container p{
+       display: none;
+      }
+
+      .feedback-form{
+        width: 100%;
+        height: 279px;
+        border-radius: 5px;
+        border: 2px #0057ff solid;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        padding-left: 7%;
+        overflow: hidden;
+      }
+
+      .feedback-form label{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size:16px;
+        color:#A6C5FF;
+        margin-bottom: -7%;
+      }
+
+      .feedback-form input{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color:#ffffff;
+    
+        border: none;
+        border-bottom: #A6C5FF 2px solid;
+        background: none;
+        width: 90%;
+      }
+
+      .feedback-form button{
+        border: none;
+        background-color:  #5181B8 ;
+        outline: none; 
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color:#ffffff;
+    
+        width: 90%;
+        height: 27px;
+    
+        align-self: flex-end;
+        margin-right: auto;
+        box-shadow: 0 0 10px #0057FF,0 0 20px #0057FF,0 0 40px #0057FF;
+
+        margin-top: 10px;
+      }
+
+      .custom-checkbox-label{
+        font-family: "Montserrat", sans-serif!important;
+        font-weight: 600!important;
+        font-size: 10px!important;
+        color:#ffffff!important;
+        margin-top: 26px;
+      
+    }
+}
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon-mobile.css ***!
+  \**************************************************************************************/
+@media (max-width:968px) {
+    .more-neon h2{
+        font-family: "Inter",sans-serif!important;
+        font-weight: 600!important;
+        color: #D012FF!important;
+        font-size: 20px!important;
+        width: 100%!important;
+        text-align: center!important;
+        letter-spacing: 6px!important;
+    
+        margin-top: 2%!important;
+    }
+
+    .price-neon{
+        display: flex!important;
+        justify-content: center!important;
+        flex-wrap: wrap!important;
+        width: 100%!important;
+        margin: auto!important;
+        margin-top: 3%!important;
+    }
+
+    .card-more-neon{
+        width: 160px!important;
+        height: 321px!important;
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: flex-start!important;
+        margin-right: 9px!important;
+        margin-top: 23px!important;
+    }
+
+    .title-card-neon{
+        color: #4182FF!important;
+        font-family: "Inter", sans-serif!important;
+        font-weight: 400!important;
+        font-size: 16px!important;
+    }
+
+    .description-title{
+        color:white!important;
+        font-family: "Inter", sans-serif!important;
+        font-weight: 700!important;
+        text-align: left!important;
+        margin-bottom: 0px!important;
+    }
+
+    .price-neon-more{
+        color: #4182FF!important;
+        font-family: "Inter", sans-serif!important;
+        font-weight: 400!important;
+        font-size: 16px!important;
+    }
+
+    .order-price-more{
+        background-color: #D012FF!important;
+        border: none!important;
+        width: 100%!important;
+        height:24px!important;
+        font-family:"Montserat", sans-serif!important;
+        color: white!important;
+        font-size: 12px!important;
+        font-weight: 400!important;
+        border-radius: 5px!important;
+    }
+
+    .card-more-neon img{
+        width: 100%!important; 
+        height: 112px!important;
+    }
+
+    .pagination_block{
+        width: 100%!important;
+        height: 50px!important;
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .pagination_block button{
+        width: 30px;
+        height: 30px;
+       background: none;
+       border: #D012FF 2px solid;
+       color:white;
+       font-family: "Inter", sans-serif;
+       font-size: 17px;
+       font-weight: 600;
+       margin-right: 18px;
+       text-align: center;
+    }
+
+}
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon.css ***!
+  \*******************************************************************************/
+.more-neon{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.more-neon h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.price-neon{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card-more-neon{
+    width: 342px;
+    height: 498px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.card-more-neon img{
+    width: 100%; 
+    height: 256px;
+}
+
+.title-card-neon{
+    color: #4182FF;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.description-title{
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.description-title-more{
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.price-neon-more{
+    color: #4182FF;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.order-price-more{
+    background-color: #D012FF;
+    border: none;
+    width: 100%;
+    height:39px;
+    font-family:"Montserat", sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.pagination_block{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+}
+.pagination_block button{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: #D012FF 2px solid;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 18px;
+    margin-bottom: 25px;
+}
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages.css ***!
+  \****************************************************************************************/
+
+.our-advantages{
+    background-color: #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:544px;
+}
+
+.our-advantages h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.container-advantages{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.block-advantages{
+    width: 370px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+ .container-title h4{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+ .container-title p{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #A6C5FF;
+    font-size: 18px;
+
+    text-align: center;
+}
+
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages-mobille.css ***!
+  \************************************************************************************************/
+@media (max-width:968px) {
+
+    .our-advantages h2{
+        font-family: "Inter",sans-serif !important;
+        font-weight: 600 !important;
+        color: #D012FF !important;
+        font-size: 20px !important;
+        width: 100% !important;
+        text-align: center !important;
+        letter-spacing: 6px !important;
+    
+        margin-top: 2% !important;
+    }
+    
+    .container-advantages{
+        width: 90% !important;
+        flex-direction: column;
+    }
+
+    .container-title {
+        height: 85%!important;
+        margin-left: 8px;
+    }
+    
+    .block-advantages{
+        width: 100%!important;
+        height: 42%!important;
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-between!important;
+        align-items: center!important;
+        margin-top: 50px!important;
+    }
+    .block-advantages img{
+        width: 74px!important;
+        height: 56px!important;
+        /* margin-top: 50px!important; */
+    }
+    .block-advantages h4{
+        font-size: 16px!important;
+        text-align: right !important;
+        width: 100%!important;
+    }
+    .block-advantages p{
+        font-size: 12px!important;
+    
+        text-align: right!important;
+    }
+    
+    
+  
+
+}
+/*!*************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/social_block/social_block.css ***!
+  \*************************************************************************************/
+.social_block{
+    background-image: url(a5f12ed9746598820875.jpg);
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.blur_container_social{
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blur_container_social p{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.social{
+    color: #4182FF;
+}
+.block_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+.block_img_container img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/social_block/social_block_mobile.css ***!
+  \********************************************************************************************/
+@media (max-width:968px) {
+
+.blur_container_social{
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blur_container_social p{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.social{
+    color: #4182FF;
+}
+.block_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+.block_img_container img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+}
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project.css ***!
+  \***********************************************************************************/
+.our-project{
+    background: #131313;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.our-project h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 2%;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 339px 339px 339px;
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 38px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+ }
+
+  
+.container-grid img{
+   width: 339px;
+   height: 452px;
+  margin-right: 13px;
+  }
+
+
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project-mobile.css ***!
+  \******************************************************************************************/
+@media (max-width:968px) {
+
+.our-project h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+    position: relative;
+    top: 2%;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 10px;
+    width: 76vw;
+    margin-top: 20px;
+    align-items: center; 
+    margin-right: auto; 
+    margin-left: auto;
+ }
+
+  
+.container-grid img{
+    width: 150px;
+    height: 210px;
+    margin-right: 0px;
+  }
+}
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/about-us/about-us.css ***!
+  \*****************************************************************************/
+.about-us{
+    background-image: url(89c670f0a1097d29bb05.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.blur-about-us{
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+    min-height: 100vh;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.blur-about-us h2{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.infoOfUs {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.infoOfUs div{
+    color:white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 20px;
+   width: 713px;
+}
+
+.infoOfUs div p {
+    margin-top: 50px;
+}
+
+.infoOfUs img{
+    width: 446px;
+    height: 495px;
+    margin-top: auto;
+}
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/about-us/about-us-mobile.css ***!
+  \************************************************************************************/
+@media (max-width:968px) {
+    .about-us{
+        background-image: url(89c670f0a1097d29bb05.png); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-height: 800px!important;
+    }
+    
+    .blur-about-us{
+        background-color: rgba(0, 0, 0,0.6);
+        width: 100%;
+        min-height: 800px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 20px!important;
+    }
+    
+   
+    .blur-about-us h2{
+      
+        font-size:20px!important;
+       
+        letter-spacing: 6px!important;
+    
+        margin-top: 2%!important;
+    }
+    
+    .infoOfUs {
+        width: 90vw!important;
+        height: 100%;
+        display: flex;
+        justify-content:center!important;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .infoOfUs div{
+        color:white;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 0px;
+        font-size: 14px!important;
+        width: 100%!important;
+
+        height: 495px!important;
+    }
+    
+    .infoOfUs div p {
+        margin-top: 20px!important;
+        font-size: 16px;
+        
+    }
+    
+    .infoOfUs img{
+   display: none;
+    }
+}
+/*!*******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq.css ***!
+  \*******************************************************************/
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(5e4d0f50a2f73281a010.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button {
+    font-size: 22px!important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(5e4d0f50a2f73281a010.svg);
+    transform: rotate(-90deg);
+}
+
+.bottom-faq{
+    border-bottom: 0.5px rgba(255, 255, 255, 0.8) solid !important;
+}
+.faq-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161616;
+    min-height: 573px;
+}
+.faq-section .title-faq{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.question-answer{
+    width:70%;
+    margin:auto;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    background-color: #161616;
+    border: 0px;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color:#161616;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color:#161616;
+    outline: none;
+    box-shadow: 0 0 0 .25rem rgba(208, 18, 255, 0.4);;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 0;
+    outline: none;
+}
+
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq-mobile.css ***!
+  \**************************************************************************/
+@media (max-width:968px) {
+
+    .faq-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #161616;
+        min-height: 500px;
+    }
+.faq-section .title-faq{
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    color: #D012FF;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 6px;
+
+    margin-top: 2%;
+}
+
+.question-answer{
+    width:90%;
+    margin:auto;
+}
+
+.accordion-button {
+    font-size: 14px!important;
+    border-top: #161616 1px solid ;
+    border-left:  #161616 1px solid ;
+    border-right:  #161616 1px solid ;
+}
+.bottom-faq{
+    border-left:  #161616  1px solid !important;
+    border-right:  #161616  1px solid!important;
+    border-bottom: 0.5px rgba(255, 255, 255, 0.8) solid !important;
+}
+
+.accordion{
+border: #161616  1px solid;
+
+}
+}
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/footer/footer.css ***!
+  \*************************************************************************/
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #252223;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    height: 400px;
+}
+
+.container-logo{
+    width: 250px;
+}
+
+.logoblock{
+    width: 100%;
+    border-bottom: #D012FF 2px solid;
+    height: 120px;
+}
+
+.container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding-top: 15px;
+}
+
+.menu-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.menu-navigation h2{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    font-size: 24px;
+    border-bottom: #D012FF 2px solid;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.item-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.item-menu div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 160px;
+}
+.item-menu div a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    font-size: 16px;
+  height: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.item-menu div a:hover{
+    border-bottom: #D012FF 2px solid;
+    color: #D012FF;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.feedback-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    overflow: hidden;
+}
+.feedback-footer h2{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    font-size: 24px;
+    border-bottom: #D012FF 2px solid;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.feedback-footer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 160px;
+  
+    margin-top: 20px;
+}
+.feedback-footer input{
+    width: 80%;
+    background:#585858;
+    height: 40px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.feedback-footer input:focus{
+    outline: none;
+    border: none;
+}
+.feedback-footer input::placeholder{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    
+}
+
+.confooter{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.width-check{
+    width: 21%!important;
+}
+
+.feedback-footer form button{
+   align-self: flex-end;
+    width: 138px;
+    height: 29px;
+    border: none;
+    background-color: #4182ff;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    right: 10%;
+}
+
+.connect-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    overflow: hidden;
+}
+.connect-us h2{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    font-size: 24px;
+    border-bottom: #D012FF 2px solid;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.connect-us div{
+  padding-top: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ height: 160px;
+ width: 100%;
+ text-align: center;
+}
+.connect-us div a{
+
+color: #ffffff;
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+border: none;
+text-decoration: none;
+
+}
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/footer/footer-mobile.css ***!
+  \********************************************************************************/
+@media (max-width: 968px) {
+    footer{
+        width: 100%;
+        background-color: #252223;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        min-height: 641px;
+        padding-bottom: 20px;
+    }
+
+    .logoblock{
+        width: 100%;
+        border-bottom: #D012FF 0px solid;
+        height: 100px;
+        padding-bottom: 31px;
+
+    }
+    .container-logo{
+        width: 220px;
+    }
+    .circleLogo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-right: 10px;
+        position: relative;
+        bottom: -23%;
+    
+    }
+
+    .textLogo {
+        font-size: 14px;
+    }
+    .NeonShopSPB {
+        font-size: 18px;
+        margin-top: 23px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: -1.5vh;
+    }
+    .container-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 521px;
+        padding-top: 15px;
+    }
+
+    .menu-navigation{
+        display: none;
+    }
+
+    .feedback-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .feedback-footer h2{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        width: 100%;
+        font-size: 20px;
+        border-bottom: #D012FF 2px solid;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .feedback-footer input{
+        width: 100%;
+        background:#585858;
+        height: 40px;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        border: none;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    .feedback-footer input::placeholder{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        border: none;
+        
+    }
+
+    .confooter{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        width: 100%;
+        overflow:visible;
+        margin-bottom: 13px;
+    }
+
+    .feedback-footer form button{
+        align-self: flex-end;
+         width: 168px;
+         height: 29px;
+         border: none;
+         background-color: #4182ff;
+         color: #ffffff;
+         font-family: "Roboto", sans-serif;
+         font-weight: 400;
+         font-size: 16px;
+         position: relative;
+         right: 0%;
+     }
+     .feedback-footer input{
+      
+        margin-bottom: 17px;
+        
+    }
+
+    .connect-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .connect-us h2{
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        width: 100%;
+        font-size: 20px;
+        border-bottom: #D012FF 2px solid;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .connect-us div{
+      padding-top: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 160px;
+     width: 100%;
+     text-align: left;
+    }
+    .connect-us div a{
+    
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    border: none;
+    text-decoration: none;
+    
+    }
+}
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (3) ***!
+  \*********************************************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Убедитесь, что z-index позволяет уведомлениям быть поверх другого контента */
+}
+
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.toast-header {
+    display: flex;
+    align-items: center;
+    padding: .5rem .75rem;
+    color: #ffffff;
+    background-color: #2e0f70;
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.btn-close{
+    color: #ffffff;
+}
