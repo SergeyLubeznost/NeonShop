@@ -3,16 +3,16 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import cafePetros from './image-price/cafePetros/20231206_35706_2_11zon.webp'
 import cafePetros2 from './image-price/cafePetros/20231206_35717_1_11zon.webp'
-import welcomeClub1 from './image-price/велком клуб 700х700 14500р/20240130_195329.jpg'
-import welcomeClub2 from './image-price/велком клуб 700х700 14500р/20240130_195324.jpg'
-import inRaspberries1 from './image-price/В малине 800х545 13500р/20231202_160830.jpg'
-import inRaspberries2 from './image-price/В малине 800х545 13500р/20231202_160910.jpg'
-import giLaser1 from './image-price/Gi лазер студио Татьяна яковлева 1000х1500мм  18,500тр/20231015_015107.jpg'
-import giLaser2 from './image-price/Gi лазер студио Татьяна яковлева 1000х1500мм  18,500тр/20231015_015203.jpg'
-import matreshka1 from './image-price/Матрёшка 1000х250 14500р/matreshka.jpg'
-import matreshka2 from './image-price/Матрёшка 1000х250 14500р/20240225_132601.jpg'
-import least1 from './image-price/лист 250х300мм  2000р/20240314_001806.jpg'
-import least2 from './image-price/лист 250х300мм  2000р/20240314_002442.jpg'
+import welcomeClub1 from './image-price/велком клуб 700х700 14500р/20240130_195329_8_11zon.webp'
+import welcomeClub2 from './image-price/велком клуб 700х700 14500р/20240130_195324_7_11zon.webp'
+import inRaspberries1 from './image-price/В малине 800х545 13500р/20231202_160830_5_11zon.webp'
+import inRaspberries2 from './image-price/В малине 800х545 13500р/20231202_160910_6_11zon.webp'
+import giLaser1 from './image-price/Gi лазер студио Татьяна яковлева 1000х1500мм  18,500тр/20231015_015107_1_11zon.webp'
+import giLaser2 from './image-price/Gi лазер студио Татьяна яковлева 1000х1500мм  18,500тр/20231015_015203_2_11zon.webp'
+import matreshka1 from './image-price/Матрёшка 1000х250 14500р/matreshka_9_11zon.webp'
+import matreshka2 from './image-price/Матрёшка 1000х250 14500р/20240225_132601_11zon_10_11zon.webp'
+import least1 from './image-price/лист 250х300мм  2000р/20240314_001806_3_11zon_12_11zon.webp'
+import least2 from './image-price/лист 250х300мм  2000р/20240314_002442_2_11zon_13_11zon.webp'
 
 
 
