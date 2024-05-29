@@ -7,10 +7,10 @@ module.exports = {
     mode: "development",
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist') // Указываем директорию для сохранения сгенерированных файлов
+        path: path.resolve(__dirname, 'dist') 
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: 'styles.css' }), // Указываем имя файла для извлеченного CSS
+        new MiniCssExtractPlugin({ filename: 'styles.css' }),
         new TerserWebpackPlugin()
     ],
     optimization: {
@@ -35,6 +35,10 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource'
+            },
+            {
+                test: /\.webp$/,
                 type: 'asset/resource'
             }
         ]

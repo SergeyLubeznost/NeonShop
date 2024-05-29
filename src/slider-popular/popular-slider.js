@@ -1,8 +1,8 @@
 import Swiper from 'swiper/bundle';
 // import styles bundle
 import 'swiper/css/bundle';
-import cafePetros from './image-price/cafePetros/cafePetros.jpg'
-import cafePetros2 from './image-price/cafePetros/20231206_035716.jpg'
+import cafePetros from './image-price/cafePetros/20231206_35706_2_11zon.webp'
+import cafePetros2 from './image-price/cafePetros/20231206_35717_1_11zon.webp'
 import welcomeClub1 from './image-price/велком клуб 700х700 14500р/20240130_195329.jpg'
 import welcomeClub2 from './image-price/велком клуб 700х700 14500р/20240130_195324.jpg'
 import inRaspberries1 from './image-price/В малине 800х545 13500р/20231202_160830.jpg'
