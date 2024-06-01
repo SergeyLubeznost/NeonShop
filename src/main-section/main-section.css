@@ -159,7 +159,7 @@ justify-content: space-around;
 /* стилизация чекбокса */
 .custom-checkbox {
     position: absolute;
-    z-index: -1;
+    z-index: 8;
     opacity: 0;
   }
 

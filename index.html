@@ -18,7 +18,7 @@
 
   <header>
     <div class="logoNeonShop">
-      <a class="logo-brand" href="#">
+      <a class="logo-brand" href="#main-sec">
         <div class="circleLogo">
           <p class="textLogo">NeonShoP</p>
         </div>
@@ -34,11 +34,11 @@
           Больше о нас
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Наши работы</a></li>
-          <li><a class="dropdown-item" href="#">Наши услуги</a></li>
-          <li><a class="dropdown-item" href="#">Больше неона</a></li>
-          <li><a class="dropdown-item" href="#">Почему мы</a></li>
-          <li><a class="dropdown-item" href="#">Галерея</a></li>
+          <li><a class="dropdown-item" href="#slider">Наши работы</a></li>
+          <li><a class="dropdown-item" href="#services">Наши услуги</a></li>
+          <li><a class="dropdown-item" href="#more-neon">Больше неона</a></li>
+          <li><a class="dropdown-item" href="#our-advantages">Почему мы</a></li>
+          <li><a class="dropdown-item" href="#our-project">Галерея</a></li>
         </ul>
       </div>
 
@@ -48,12 +48,11 @@
           Посчитаем
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Рассчет</a></li>
-          <li><a class="dropdown-item" href="#">FAQ</a></li>
-          <li><a class="dropdown-item" href="#">О нас</a></li>
+          <li><a class="dropdown-item" href="#feedback">Рассчет</a></li>
+          <li><a class="dropdown-item" href="#about-us">О нас</a></li>
         </ul>
       </div>
-      <a href=""><button class="btn-FAQ">FAQ</button></a></li>
+      <a href="#FAQ"><button class="btn-FAQ">FAQ</button></a></li>
       </ul>
     </nav>
 
@@ -71,7 +70,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <div class="logoNeonShop">
-          <a class="logo-brand" href="#">
+          <a class="logo-brand" href="#main-sec">
             <div class="circleLogo">
               <p class="textLogo">NeonShoP</p>
             </div>
@@ -85,14 +84,14 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
 
-            <a class="nav-link active" aria-current="page" href="#">Наши работы</a>
-            <a class="nav-link" href="#">Наши услуги</a>
-            <a class="nav-link" href="#">Больше неона</a>
-            <a class="nav-link" href="#">Почему мы</a>
-            <a class="nav-link" href="#">Галерея</a>
-            <a class="nav-link" href="#">Рассчет</a>
-            <a class="nav-link" href="#">О нас</a>
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link active" aria-current="page" href="#slider">Наши работы</a>
+            <a class="nav-link" href="#services">Наши услуги</a>
+            <a class="nav-link" href="#more-neon">Больше неона</a>
+            <a class="nav-link" href="#our-advantages">Почему мы</a>
+            <a class="nav-link" href="#our-project">Галерея</a>
+            <a class="nav-link" href="#feedback">Рассчет</a>
+            <a class="nav-link" href="#about-us">О нас</a>
+            <a class="nav-link" href="#FAQ">FAQ</a>
 
             <div class="call-order">
               <p>Заказать рассчет</p>
@@ -109,7 +108,7 @@
     </nav>
   </div>
   <div class="zaglushka"></div>
-  <section class="main-section">
+  <section id="main-sec" class="main-section">
     <div class="main-section-blur">
       <h1>Неоновые вывески, изготовление и ремонт под ключ</h1>
 
@@ -146,7 +145,7 @@
                   </label>
                   <input id="phone" type="tel" placeholder="Введите телефон">
                   <div class="conf">
-                    <input id="confPolice" class="custom-checkbox" type="checkbox">
+                    <input checked id="confPolice" class="custom-checkbox" type="checkbox">
                     <label for="confPolice">Я согласен(-на) на обработку персональных данных</label>
                   </div>
                 </form>
@@ -166,7 +165,7 @@
     </div>
   </section>
 
-  <section class="popular-slider">
+  <section id="slider" class="popular-slider">
     <div id="sliderContainer" class="blur-slider">
       <h2>Наши работы</h2>
 
@@ -197,7 +196,7 @@
 
   </section>
 
-  <section class="our-services">
+  <section id="services" class="our-services">
     <h2>Наши услуги</h2>
 
     <div class="services-container">
@@ -225,7 +224,7 @@
     </div>
   </section>
 
-  <section class="feedback">
+  <section id="feedback" class="feedback">
     <div class="blur-feedback">
       <h2>Рассчитать стоимость</h2>
 
@@ -243,7 +242,7 @@
           <input type="phone" name="phone" id="phone-feedback">
 
           <div class="conf-feedback">
-            <input checked id="chekcbox-feedback" class="custom-checkbox-feedback" type="checkbox">
+            <input checked id="chekcbox-feedback" class="custom-checkbox-feedback" type="checkbox" >
             <label class="custom-checkbox-label" for="chekcbox-feedback">Я согласен(-на) на обработку персональных
               данных</label>
           </div>
@@ -259,14 +258,14 @@
 
   
 
-  <section class="more-neon">
+  <section id="more-neon" class="more-neon">
     <h2>Больше неона</h2>
     <div id="block_more_price" class="price-neon">
     </div>
     <div id="pagination" class="pagination_block"></div>
   </section>
 
-  <section class="our-advantages">
+  <section id="our-advantages" class="our-advantages">
     <h2>Наши преимущества</h2>
     <div class="container-advantages">
       <div class="block-advantages">
@@ -304,7 +303,7 @@
     </div>
   </section>
 
-  <section class="our-project">
+  <section id="our-project" class="our-project">
     <h2>Ваши проекты нас вдохновляют!</h2>
     <div id="grid-project" class="container-grid">
       <img src="OUR-PROJECT-IMG/20231106_224430_25_11zon_34_11zon.webp" class="grid-image">
@@ -320,7 +319,7 @@
       <img src="OUR-PROJECT-IMG/морожено 200х400мм   2000тр_35_44.webp" class="grid-image">
     </div>
   </section>
-  <section class="about-us">
+  <section id="about-us" class="about-us">
     <div class="blur-about-us">
     <h2>О нас</h2>
     <div id="infoOfUsId" class="infoOfUs">
@@ -342,7 +341,7 @@
   </div>
   </section>
 
-  <section class="faq-section">
+  <section id="FAQ" class="faq-section">
     <h2 class="title-faq">Ответы на популярные вопросы</h2>
     <div class="question-answer">
       <div class="accordion accordion-flush" id="accordionFlushExample">

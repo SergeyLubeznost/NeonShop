@@ -10,7 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist') 
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: 'styles.css' }),
+        new MiniCssExtractPlugin({ filename: 'main.css' }),
         new TerserWebpackPlugin()
     ],
     optimization: {

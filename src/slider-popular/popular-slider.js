@@ -198,6 +198,20 @@ function openModal(productId) {
               <input id="phonePrice" type="tel" placeholder="Введите телефон">
           </form>
       `;
+      const nameInput = document.getElementById('namePrice');
+      const phoneInput = document.getElementById('phonePrice'); // Исправлено здесь
+  
+      nameInput.addEventListener('input', function() {
+          this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, ''); // Оставляем только буквы (на основе указанных символов)
+      });
+  
+      phoneInput.addEventListener('input', function() {
+          this.value = this.value.replace(/\D/g, ''); // Оставляем только цифры
+      });
+
+      
+
+
 
       const carousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
           interval: false // Чтобы карусель не переключалась автоматически
@@ -208,6 +222,8 @@ function openModal(productId) {
       });
 
       myModal.show();
+
+  
 
       const submitButton = document.querySelector('#send-price');
 

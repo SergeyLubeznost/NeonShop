@@ -423,6 +423,8 @@ header{
 
 }
 
+
+
 .NeonShopSPB {
     font-size: 22px;
     color: #F3C5FF;
@@ -577,6 +579,7 @@ width: 20%;
 .adaptive-menu{
     display: none;
 }
+
 /*!********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/header/header-mobile.css ***!
   \********************************************************************************/
@@ -834,7 +837,7 @@ justify-content: space-around;
 /* стилизация чекбокса */
 .custom-checkbox {
     position: absolute;
-    z-index: -1;
+    z-index: 8;
     opacity: 0;
   }
 
@@ -2264,6 +2267,8 @@ border: none;
 text-decoration: none;
 
 }
+
+
 /*!********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/footer/footer-mobile.css ***!
   \********************************************************************************/
@@ -2467,3 +2472,5 @@ html {
 .btn-close{
     color: #ffffff;
 }
+
+
