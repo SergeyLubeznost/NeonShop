@@ -40,6 +40,7 @@ header{
     margin-right: 13px;
     background-color: #000000;
     box-shadow: 0 0 10px 5px #FF00B8,inset 0 0 10px 5px #FF00B8; /* Эффект свечения неона */
+    animation: flicker 1s infinite alternate;
 }
 
 .textLogo{
@@ -210,4 +211,35 @@ width: 20%;
 
 .adaptive-menu{
     display: none;
+}
+
+
+@keyframes flicker {
+    0% {
+        filter: brightness(100%);
+    }
+    15% {
+        filter: brightness(70%);
+    }
+    30% {
+        filter: brightness(80%);
+    }
+    45% {
+        filter: brightness(90%);
+    }
+    60% {
+        filter: brightness(85%);
+    }
+    85% {
+        filter: brightness(85%);
+    }
+    90% {
+        filter: brightness(0%);
+    }
+    93% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
 }

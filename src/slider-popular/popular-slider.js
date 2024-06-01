@@ -193,21 +193,13 @@ function openModal(productId) {
           <p class="decription-product"><strong>Цена:</strong> ${product.price || 'Цена не указана'}</p>
           <form class="form-header" id="modal-form">
               <label for="namePrice">Ваше Имя</label>
-              <input id="namePrice" type="text" placeholder="Введите Имя">
+              <input id="namePrice" type="text" placeholder="Введите Имя" >
               <label for="phonePrice">Ваш телефон</label>
               <input id="phonePrice" type="tel" placeholder="Введите телефон">
           </form>
       `;
-      const nameInput = document.getElementById('namePrice');
-      const phoneInput = document.getElementById('phonePrice'); // Исправлено здесь
-  
-      nameInput.addEventListener('input', function() {
-          this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, ''); // Оставляем только буквы (на основе указанных символов)
-      });
-  
-      phoneInput.addEventListener('input', function() {
-          this.value = this.value.replace(/\D/g, ''); // Оставляем только цифры
-      });
+ 
+ 
 
       
 
@@ -227,6 +219,33 @@ function openModal(productId) {
 
       const submitButton = document.querySelector('#send-price');
 
+      const nameInput = document.getElementById('namePrice');
+      const phoneInput = document.getElementById('phonePrice');
+
+      if (nameInput.value.trim() === '' || phoneInput.value.trim() === '') {
+        submitButton.setAttribute('disabled', 'disabled');
+    } else {
+        submitButton.removeAttribute('disabled');
+    }
+  
+    
+    nameInput.addEventListener('input', function() {
+        this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, '');
+        if (nameInput.value.trim() === '' || phoneInput.value.trim() === '') {
+          submitButton.setAttribute('disabled', 'disabled');
+      } else {
+          submitButton.removeAttribute('disabled');
+      }
+    });
+    
+    phoneInput.addEventListener('input', function() {
+        this.value = this.value.replace(/\D/g, '');
+        if (nameInput.value.trim() === '' || phoneInput.value.trim() === '') {
+          submitButton.setAttribute('disabled', 'disabled');
+      } else {
+          submitButton.removeAttribute('disabled');
+      }
+    });
       // Удаляем предыдущий обработчик события, если он существует
       submitButton.removeEventListener('click', handleSubmitData);
 

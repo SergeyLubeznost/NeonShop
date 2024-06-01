@@ -57,7 +57,8 @@ form.addEventListener('submit', async function(event) {
                     </div>`;
 
                 toastContainer.appendChild(toast);
-
+                document.getElementById('name-feedback').value = ""; // Очистка поля 'name-feedback'
+                document.getElementById('phone-feedback').value = ""; // Очистка поля 'phone-feedback'
                 // Инициализация Bootstrap toast
                 new bootstrap.Toast(toast).show();
             } else {
@@ -103,8 +104,39 @@ form.addEventListener('submit', async function(event) {
             </div>`;
 
         toastContainer.appendChild(toast);
-
+     
         // Инициализация Bootstrap toast
         new bootstrap.Toast(toast).show();
+       
     }
+});
+
+const submitButtonFeed = document.querySelector('#submit-btn');
+
+const nameInputFeed = document.getElementById('name-feedback');
+const phoneInputFeed = document.getElementById('phone-feedback');
+
+if (nameInputFeed.value.trim() === '' || phoneInputFeed.value.trim() === '') {
+    submitButtonFeed.setAttribute('disabled', 'disabled');
+} else {
+    submitButtonFeed.removeAttribute('disabled');
+}
+
+
+nameInputFeed.addEventListener('input', function() {
+  this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, '');
+  if (nameInputFeed.value.trim() === '' || phoneInputFeed.value.trim() === '') {
+    submitButtonFeed.setAttribute('disabled', 'disabled');
+} else {
+    submitButtonFeed.removeAttribute('disabled');
+}
+});
+
+phoneInputFeed.addEventListener('input', function() {
+  this.value = this.value.replace(/\D/g, '');
+  if (nameInputFeed.value.trim() === '' || phoneInputFeed.value.trim() === '') {
+    submitButtonFeed.setAttribute('disabled', 'disabled');
+} else {
+    submitButtonFeed.removeAttribute('disabled');
+}
 });

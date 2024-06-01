@@ -79,16 +79,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const nameInput = document.getElementById('namePrice');
-    const phoneInput = document.getElementById('phonePrice'); // Исправлено здесь
-
-    nameInput.addEventListener('input', function() {
-        this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, ''); // Оставляем только буквы (на основе указанных символов)
-    });
-
-    phoneInput.addEventListener('input', function() {
-        this.value = this.value.replace(/\D/g, ''); // Оставляем только цифры
-    });
-});
 
