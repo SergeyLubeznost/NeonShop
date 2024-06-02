@@ -1,5 +1,4 @@
 import Swiper from 'swiper/bundle';
-// import styles bundle
 import 'swiper/css/bundle';
 import cafePetros from './image-price/cafePetros/20231206_35706_2_11zon.webp'
 import cafePetros2 from './image-price/cafePetros/20231206_35717_1_11zon.webp'
@@ -119,7 +118,7 @@ prevButton.className = 'swiper-button-prev';
 swiperContainer.appendChild(swiperWrapper);
 sliderBlockBlur.appendChild(nextButton);
 sliderBlockBlur.appendChild(prevButton);
-// swiperContainer.appendChild(pagination);
+
 
 // Добавляем swiperContainer в блок slider-block
 sliderBlock.appendChild(swiperContainer);
@@ -140,6 +139,11 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       loop: true,
       spaceBetween: 20
+    },
+    670: {
+      slidesPerView: 2,
+      loop: true,
+      spaceBetween: 20
     }
   },
 });
@@ -157,9 +161,6 @@ orderButtons.forEach(button => {
     openModal(productId);
   });
 });
-
-// const botToken = '7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU';
-// const chatId = '-4245946360';
 
 function openModal(productId) {
   const product = popularPrice.find(item => item.id === productId);
@@ -198,12 +199,6 @@ function openModal(productId) {
               <input id="phonePrice" type="tel" placeholder="Введите телефон">
           </form>
       `;
- 
- 
-
-      
-
-
 
       const carousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
           interval: false // Чтобы карусель не переключалась автоматически
@@ -252,37 +247,42 @@ function openModal(productId) {
       submitButton.addEventListener('click', handleSubmitData);
 
       async function handleSubmitData(event) {
-       const botToken = '7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU';
-const chatId = '-4245946360';
-        
+   
         const name = document.getElementById('namePrice').value;
         const phone = document.getElementById('phonePrice').value;
 
         const data = {
             productName: product.title || 'Название не указано',
-            productDescription: product.description || 'Описание отсутствует',
+            productDescription: product.description || 'прозрачное оргстекло 5',
             price: product.price  || 'Описание отсутствует',
             size: product.size  || 'Описание отсутствует',
             name,
             phone
         };
 
-        const dataCorrect = `Новая заявка:
-        Продукт: ${data.productName}\n
-        Размер: ${data.size}\n
-        Цена: ${data.price}\n
-        Имя: ${data.name}\n
-        Телефон: ${data.phone}`;
-
-        const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(dataCorrect)}`;
-
         const toastContainer = document.querySelector('.toast-container');
         
+        const url = 'http://a0989108.xsph.ru/send-php.php';
+
+        const formData = new FormData();
+        formData.append('productName', data.productName);
+        formData.append('productDescription', data.productDescription);
+        formData.append('price', data.price);
+        formData.append('size', data.size);
+        formData.append('name', data.name);
+        formData.append('phone', data.phone);
+
+
         try {
-            const response = await fetch(url, { method: 'GET' });
-            const responseData = await response.json();
-            
-            if (responseData.ok) {
+          const response = await fetch('http://a0989108.xsph.ru/send-php.php', {
+        method: 'POST',
+        body: formData
+    });
+        const responseData = await response.json();
+    
+        if (responseData.status === 'success') {
+            console.log(responseData.message);
+        
                 const toast = document.createElement('div');
                 toast.className = 'toast fade show';
                 toast.setAttribute('role', 'alert');
@@ -315,9 +315,7 @@ const chatId = '-4245946360';
             console.error('Ошибка при выполнении запроса:', error);
         }
     }
-  } else {
-      // Обработка когда продукт не найден
-  }
+  } 
 }
 
 

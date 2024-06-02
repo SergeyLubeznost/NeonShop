@@ -1,9 +1,3 @@
-//id -4245946360 token 7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU
-
-const botToken = '7140577113:AAHgtOhZYa0H0wktR1yUv4R-XZ06aiqrlBU';
-const chatId = '-4245946360';
-
-
 const form = document.querySelector('.feedback-form');
 
 const submitButton = document.getElementById('submit-btn');
@@ -31,15 +25,21 @@ form.addEventListener('submit', async function(event) {
     const toastContainer = document.querySelector('.toast-container');
 
     if (name && phone && checkbox.checked) {
-        const message = `Новая заявка:\nИмя: ${name}\nТелефон: ${phone}`;
 
-        const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('phone', phone);
 
         try {
-            const response = await fetch(url, { method: 'GET' });
+            const response = await fetch('http://a0989108.xsph.ru/send-php.php', {
+                method: 'POST',
+                body: formData
+            });
             const data = await response.json();
-            
-            if (data.ok) {
+            if (data.status === 'success') {
+                // Выводим успешный ответ в консоль
+                console.log(data.message);
+           
                 const toast = document.createElement('div');
                 toast.className = 'toast fade show';
                 toast.setAttribute('role', 'alert');
@@ -83,6 +83,9 @@ form.addEventListener('submit', async function(event) {
                 // Инициализация Bootstrap toast
                 new bootstrap.Toast(toast).show();
             }
+
+          
+
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
         }

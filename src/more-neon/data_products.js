@@ -20,8 +20,6 @@ import shawerma2 from "../more-neon/работы по неону/шаверма 
 import pekarnya1 from "../more-neon/работы по неону/шаверма на углях 700х300, пекарня 700х150 общая цена 15000/20231230_135246_11zon_11zon.webp"
 import pekarnya2 from "../more-neon/работы по неону/шаверма на углях 700х300, пекарня 700х150 общая цена 15000/20231230_185426_11zon_11zon.webp"
 
-console.log(popularPrice);
-
 export let more_price_neon = [
     {
         id : 12350,

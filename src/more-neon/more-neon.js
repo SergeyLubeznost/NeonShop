@@ -1,7 +1,5 @@
-import Swiper from 'swiper/bundle';
-import {combinedArray} from "./data_products";
 
-console.log(combinedArray);
+import {combinedArray} from "./data_products";
 
 let price_more_block = document.querySelector("#block_more_price");
 
@@ -54,11 +52,6 @@ orderPriceButtons.forEach(button => {
     button.addEventListener('click', function () {
         const productId = button.getAttribute('data-id'); // Получаем data-id кнопки на которую нажали
         const product = combinedArray.find(item => item.id.toString() === productId.toString());
-        console.log(productId);
-        console.log(combinedArray);
-        
-        console.log(product);
-
         openModal(product);
     });
 });

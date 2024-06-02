@@ -1265,7 +1265,7 @@ margin-bottom: 20px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 390px;
+        height: 456px;
       }
    
     .blur-feedback h2{
@@ -1294,7 +1294,7 @@ margin-bottom: 20px;
 
       .feedback-form{
         width: 100%;
-        height: 279px;
+        height:347px;
         border-radius: 5px;
         border: 2px #0057ff solid;
     
@@ -1349,7 +1349,7 @@ margin-bottom: 20px;
       .custom-checkbox-label{
         font-family: "Montserrat", sans-serif!important;
         font-weight: 600!important;
-        font-size: 10px!important;
+        font-size: 13px!important;
         color:#ffffff!important;
         margin-top: 26px;
       
