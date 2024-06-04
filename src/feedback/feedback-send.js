@@ -31,7 +31,7 @@ form.addEventListener('submit', async function(event) {
         formData.append('phone', phone);
 
         try {
-            const response = await fetch('http://a0989108.xsph.ru/send-php.php', {
+            const response = await fetch('https://neonshopspb.ru/send-php.php', {
                 method: 'POST',
                 body: formData
             });

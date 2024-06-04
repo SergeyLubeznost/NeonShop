@@ -262,7 +262,6 @@ function openModal(productId) {
 
         const toastContainer = document.querySelector('.toast-container');
         
-        const url = 'http://a0989108.xsph.ru/send-php.php';
 
         const formData = new FormData();
         formData.append('productName', data.productName);
@@ -274,7 +273,7 @@ function openModal(productId) {
 
 
         try {
-          const response = await fetch('http://a0989108.xsph.ru/send-php.php', {
+          const response = await fetch('https://neonshopspb.ru/send-php.php', {
         method: 'POST',
         body: formData
     });

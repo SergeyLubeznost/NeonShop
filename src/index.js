@@ -56,8 +56,8 @@ anchorLinks.forEach(anchorLink => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const nameInput = document.getElementById('name');
-    const phoneInput = document.getElementById('phone');
+    const nameInput = document.getElementById('name-main');
+    const phoneInput = document.getElementById('phone-main');
     const checkbox = document.getElementById('confPolice');
     const sendButton = document.querySelector('.send-btn');
   
@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
     phoneInput.addEventListener('input', function() {
       this.value = this.value.replace(/\D/g, ''); // Оставляем только цифры
     });
+
+    
   });
 
 
