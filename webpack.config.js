@@ -11,10 +11,12 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: 'main.css' }),
-        new TerserWebpackPlugin()
     ],
     optimization: {
-        minimizer: [new TerserWebpackPlugin()]
+        minimize: true,
+        minimizer: [new TerserWebpackPlugin({
+            extractComments: false,
+        })]
     },
     module: {
         rules: [
@@ -40,7 +42,7 @@ module.exports = {
             {
                 test: /\.webp$/,
                 type: 'asset/resource'
-            }
+            },
         ]
     }
 };
