@@ -56,8 +56,8 @@ anchorLinks.forEach(anchorLink => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const nameInput = document.getElementById('name-main');
-    const phoneInput = document.getElementById('phone-main');
+    const nameInput = document.getElementById('name');
+    const phoneInput = document.getElementById('phone');
     const checkbox = document.getElementById('confPolice');
     const sendButton = document.querySelector('.send-btn');
   

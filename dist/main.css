@@ -1260,6 +1260,14 @@ margin-bottom: 20px;
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback-mobile.css ***!
   \************************************************************************************/
 @media (max-width: 968px) {
+  .conf-feedback{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: -12%;
+}
     .feedback{
         background-image: url(ff991b2ca19387a9f6ef.png); 
         background-repeat: no-repeat;

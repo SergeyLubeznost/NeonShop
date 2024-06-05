@@ -1,4 +1,12 @@
 @media (max-width: 968px) {
+  .conf-feedback{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: -12%;
+}
     .feedback{
         background-image: url("./image-feedback/loon-image-high 2.png"); 
         background-repeat: no-repeat;
