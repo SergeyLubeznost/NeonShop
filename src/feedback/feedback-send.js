@@ -25,21 +25,20 @@ form.addEventListener('submit', async function(event) {
     const toastContainer = document.querySelector('.toast-container');
 
     if (name && phone && checkbox.checked) {
-
         const formData = new FormData();
         formData.append('name', name);
         formData.append('phone', phone);
 
         try {
             const response = await fetch('https://neonshopspb.ru/send-php.php', {
-                method: 'POST',
-                body: formData
+              method: 'POST',
+              body: formData
             });
             const data = await response.json();
+            
             if (data.status === 'success') {
-                // Выводим успешный ответ в консоль
                 console.log(data.message);
-           
+
                 const toast = document.createElement('div');
                 toast.className = 'toast fade show';
                 toast.setAttribute('role', 'alert');
@@ -59,33 +58,8 @@ form.addEventListener('submit', async function(event) {
                 toastContainer.appendChild(toast);
                 document.getElementById('name-feedback').value = ""; // Очистка поля 'name-feedback'
                 document.getElementById('phone-feedback').value = ""; // Очистка поля 'phone-feedback'
-                // Инициализация Bootstrap toast
-                new bootstrap.Toast(toast).show();
-            } else {
-                const toast = document.createElement('div');
-                toast.className = 'toast fade show';
-                toast.setAttribute('role', 'alert');
-                toast.setAttribute('aria-live', 'assertive');
-                toast.setAttribute('aria-atomic', 'true');
-
-                toast.innerHTML = `
-                    <div class="toast-header">
-                        <strong class="me-auto">Ваша заявка ${name}</strong>
-                        <small>${new Date().toLocaleTimeString()}</small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div class="toast-body">
-                       Успешно отправлена
-                    </div>`;
-
-                toastContainer.appendChild(toast);
-
-                // Инициализация Bootstrap toast
                 new bootstrap.Toast(toast).show();
             }
-
-          
-
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
         }
@@ -108,12 +82,9 @@ form.addEventListener('submit', async function(event) {
 
         toastContainer.appendChild(toast);
      
-        // Инициализация Bootstrap toast
         new bootstrap.Toast(toast).show();
-       
     }
 });
-
 const submitButtonFeed = document.querySelector('#submit-btn');
 
 const nameInputFeed = document.getElementById('name-feedback');

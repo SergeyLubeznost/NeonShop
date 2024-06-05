@@ -247,22 +247,20 @@ function openModal(productId) {
       submitButton.addEventListener('click', handleSubmitData);
 
       async function handleSubmitData(event) {
-   
         const name = document.getElementById('namePrice').value;
         const phone = document.getElementById('phonePrice').value;
-
+    
         const data = {
             productName: product.title || 'Название не указано',
             productDescription: product.description || 'прозрачное оргстекло 5',
-            price: product.price  || 'Описание отсутствует',
-            size: product.size  || 'Описание отсутствует',
+            price: product.price || 'Описание отсутствует',
+            size: product.size || 'Описание отсутствует',
             name,
             phone
         };
-
+    
         const toastContainer = document.querySelector('.toast-container');
-        
-
+    
         const formData = new FormData();
         formData.append('productName', data.productName);
         formData.append('productDescription', data.productDescription);
@@ -270,24 +268,23 @@ function openModal(productId) {
         formData.append('size', data.size);
         formData.append('name', data.name);
         formData.append('phone', data.phone);
-
-
-        try {
-          const response = await fetch('https://neonshopspb.ru/send-php.php', {
-        method: 'POST',
-        body: formData
-    });
-        const responseData = await response.json();
     
-        if (responseData.status === 'success') {
-            console.log(responseData.message);
-        
+        try {
+            const response = await fetch('https://neonshopspb.ru/send-php.php', {
+                method: 'POST',
+                body: formData
+            });
+            const responseData = await response.json();
+    
+            if (responseData.status === 'success') {
+                console.log(responseData.message);
+    
                 const toast = document.createElement('div');
                 toast.className = 'toast fade show';
                 toast.setAttribute('role', 'alert');
                 toast.setAttribute('aria-live', 'assertive');
                 toast.setAttribute('aria-atomic', 'true');
-
+    
                 toast.innerHTML = `
                     <div class="toast-header">
                         <strong class="me-auto">Ваша заявка ${name}</strong>
@@ -297,24 +294,21 @@ function openModal(productId) {
                     <div class="toast-body">
                         Успешно отправлена
                     </div>`;
-
+    
                 toastContainer.appendChild(toast);
-
-                    // Удаляем предыдущий обработчик события, если он существует
-      submitButton.removeEventListener('click', handleSubmitData);
-
+    
+                // Удаляем предыдущий обработчик события, если он существует
+                submitButton.removeEventListener('click', handleSubmitData);
+    
                 new bootstrap.Toast(toast).show();
                 myModal.hide();
-                    // Удаляем предыдущий обработчик события, если он существует
-      submitButton.removeEventListener('click', handleSubmitData);
             } else {
                 console.error('Ошибка при отправке данных в Telegram.');
             }
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
         }
-    }
-  } 
+    }  } 
 }
 
 
