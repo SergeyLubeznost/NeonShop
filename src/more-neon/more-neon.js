@@ -55,62 +55,154 @@ orderPriceButtons.forEach(button => {
         openModal(product);
     });
 });
-
-function openModal(product) {
-   
-  
-    if (product) {
-        const modalTitle = document.querySelector('#exampleModalLabelNew');
-        modalTitle.textContent = product.title || 'Название не указано';
-  
-        const modalBody = document.querySelector('#exampleModalNew .modal-body');
-        modalBody.innerHTML = `
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="${product.image}" alt="Product Image">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="${product.image2}" alt="Product Image">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p class="decription-product"><strong>Основание:</strong> ${product.discription || 'Описание отсутствует'}</p>
-            <p class="decription-product"><strong>Размер основания:</strong> ${product.size || 'Размер не указан'}</p>
-            <p class="decription-product"><strong>Цена:</strong> ${product.price || 'Цена не указана'}</p>
-            <form class="form-header" action="">
-                <label for="name">Ваше Имя</label>
-                <input id="name" type="text" placeholder="Введите Имя">
-                <label for="phone">Ваш телефон</label>
-                <input id="phone" type="tel" placeholder="Введите телефон">
-            </form>
-        `;
-  
-        const carousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
-            interval: false // Чтобы карусель не переключалась автоматически
-        });
-  
-        const myModal = new bootstrap.Modal(document.getElementById('exampleModalNew'), {
-            keyboard: false
-        });
-  
-        myModal.show();
-    } else {
-        console.error('Продукт с указанным productId не найден.');
-    }
-  }
-  
-
-
 }
+function openModal(product) {
+  if (product) {
+      const modalTitle = document.querySelector('#exampleModalLabelNew');
+      modalTitle.textContent = product.title || 'Название не указано';
+
+      const modalBody = document.querySelector('#exampleModalNew .modal-body');
+      modalBody.innerHTML = `
+          <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="${product.image}" alt="Product Image">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="${product.image2}" alt="Product Image">
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          <p class="decription-product"><strong>Основание:</strong> ${product.discription || 'Описание отсутствует'}</p>
+          <p class="decription-product"><strong>Размер основания:</strong> ${product.size || 'Размер не указан'}</p>
+          <p class="decription-product"><strong>Цена:</strong> ${product.price || 'Цена не указана'}</p>
+          <form class="form-header" action="">
+              <label for="name-more">Ваше Имя</label>
+              <input id="name-more" type="text" placeholder="Введите Имя">
+              <label for="phone-more">Ваш телефон</label>
+              <input id="phone-more" type="tel" placeholder="Введите телефон">
+          </form>
+      `;
+
+      const carousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
+          interval: false // Чтобы карусель не переключалась автоматически
+      });
+
+      const myModal = new bootstrap.Modal(document.getElementById('exampleModalNew'), {
+          keyboard: false
+      });
+
+      myModal.show();
+
+      const submitButton = document.querySelector('#send-price');
+
+      const nameInput = document.getElementById('name-more');
+      const phoneInput = document.getElementById('phone-more');
+
+      if (nameInput.value.trim() === '' || phoneInput.value.trim() === '') {
+          submitButton.setAttribute('disabled', 'disabled');
+      } else {
+          submitButton.removeAttribute('disabled');
+      }
+
+      nameInput.addEventListener('input', function() {
+          this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, '');
+          if (nameInput.value.trim() === '' || phoneInput.value.trim() === '') {
+              submitButton.setAttribute('disabled', 'disabled');
+          } else {
+              submitButton.removeAttribute('disabled');
+          }
+      });
+
+      phoneInput.addEventListener('input', function() {
+          this.value = this.value.replace(/\D/g, '');
+          if (nameInput.value.trim() === '' || phoneInput.value.trim() === '') {
+              submitButton.setAttribute('disabled', 'disabled');
+          } else {
+              submitButton.removeAttribute('disabled');
+          }
+      });
+
+      // Удаляем предыдущий обработчик события, если он существует
+      submitButton.removeEventListener('click', handleSubmitData);
+
+      submitButton.addEventListener('click', handleSubmitData);
+
+      async function handleSubmitData(event) {
+        const name = document.getElementById('name-more').value;
+          const phone = document.getElementById('phone-more').value;
+          const data = {
+              productName: product.title || 'Название не указано',
+              productDescription: product.description || 'прозрачное оргстекло 5',
+              price: product.price || 'Описание отсутствует',
+              size: product.size || 'Описание отсутствует',
+              name,
+              phone
+          };
+
+          const toastContainer = document.querySelector('.toast-container');
+
+          const formData = new FormData();
+          formData.append('productName', data.productName);
+          formData.append('productDescription', data.productDescription);
+          formData.append('price', data.price);
+          formData.append('size', data.size);
+          formData.append('name', data.name);
+          formData.append('phone', data.phone);
+
+          try {
+              const response = await fetch('https://neonshopspb.ru/send-php.php', {
+                  method: 'POST',
+                  body: formData
+              });
+              const responseData = await response.json();
+
+              if (responseData.status === 'success') {
+                  console.log(responseData.message);
+
+                  const toast = document.createElement('div');
+                  toast.className = 'toast fade show';
+                  toast.setAttribute('role', 'alert');
+                  toast.setAttribute('aria-live', 'assertive');
+                  toast.setAttribute('aria-atomic', 'true');
+
+                  toast.innerHTML = `
+                      <div class="toast-header">
+                          <strong class="me-auto">Ваша заявка ${name}</strong>
+                          <small>${new Date().toLocaleTimeString()}</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                          Успешно отправлена
+                      </div>`;
+
+                  toastContainer.appendChild(toast);
+
+                  // Удаляем предыдущий обработчик события, если он существует
+                  submitButton.removeEventListener('click', handleSubmitData);
+
+                  new bootstrap.Toast(toast).show();
+                  myModal.hide();
+              } else {
+                  console.error('Ошибка при отправке данных в Telegram.');
+              }
+          } catch (error) {
+              console.error('Ошибка при выполнении запроса:', error);
+          }
+      }
+  } else {
+      console.error('Продукт с указанным productId не найден.');
+  }
+}
+
 
 function updatePagination(numberOfPages) { // Обновление элементов пагинации
   paginationWrapper.innerHTML = ''; // Очистка текущих элементов пагинации

@@ -43,7 +43,7 @@
         width: 100%;
         height:347px;
         border-radius: 5px;
-        border: 2px #0057ff solid;
+        border: none;
     
         display: flex;
         flex-direction: column;
