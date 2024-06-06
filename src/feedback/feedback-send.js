@@ -1,6 +1,6 @@
 const form = document.querySelector('.feedback-form');
 
-const submitButton = document.getElementById('submit-btn');
+const submitButton = document.getElementById('submit-btn-feedback');
 const checkbox = document.getElementById('chekcbox-feedback');
 
 submitButton.disabled = false;
@@ -62,6 +62,8 @@ form.addEventListener('submit', async function(event) {
             }
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
+            document.getElementById('name-feedback').value = ""; // Очистка поля 'name-feedback'
+            document.getElementById('phone-feedback').value = ""; // Очистка поля 'phone-feedback'
         }
     } else {
         const toast = document.createElement('div');
@@ -85,16 +87,10 @@ form.addEventListener('submit', async function(event) {
         new bootstrap.Toast(toast).show();
     }
 });
-const submitButtonFeed = document.querySelector('#submit-btn');
+const submitButtonFeed = document.querySelector('#submit-btn-feedback');
 
 const nameInputFeed = document.getElementById('name-feedback');
 const phoneInputFeed = document.getElementById('phone-feedback');
-
-if (nameInputFeed.value.trim() === '' || phoneInputFeed.value.trim() === '') {
-    submitButtonFeed.setAttribute('disabled', 'disabled');
-} else {
-    submitButtonFeed.removeAttribute('disabled');
-}
 
 
 nameInputFeed.addEventListener('input', function() {

@@ -186,11 +186,12 @@ function openModal(product) {
 
                   toastContainer.appendChild(toast);
 
-                  // Удаляем предыдущий обработчик события, если он существует
-                  submitButton.removeEventListener('click', handleSubmitData);
+               
 
                   new bootstrap.Toast(toast).show();
                   myModal.hide();
+                     // Удаляем предыдущий обработчик события, если он существует
+                     submitButton.removeEventListener('click', handleSubmitData);
               } else {
                   console.error('Ошибка при отправке данных в Telegram.');
               }

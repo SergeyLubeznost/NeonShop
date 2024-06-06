@@ -1,24 +1,18 @@
 import './style.css';
 
-let promiseArray = [];
 
-promiseArray.push(import('./slider-popular/popular-slider'));
-promiseArray.push(import('./slider-popular/pop-slider.css'));
-promiseArray.push(import('./slider-popular/pop-slider-mobile.css'));
-promiseArray.push(import('./feedback/feedback-send'));
-promiseArray.push(import('./more-neon/more-neon'));
-promiseArray.push(import('./more-neon/data_products'));
-promiseArray.push(import('./Our advantages/advantagesImg'));
-promiseArray.push(import('./social_block/social_block_img'));
-promiseArray.push(import('./about-us/about-us.js'));
 
-Promise.all(promiseArray)
-  .then(() => {
-    
-  })
-  .catch((error) => {
-    
-  });
+import('./slider-popular/popular-slider');
+import('./slider-popular/pop-slider.css');
+import('./slider-popular/pop-slider-mobile.css');
+import('./feedback/feedback-send');
+import('./more-neon/more-neon');
+import('./more-neon/data_products');
+import('./Our advantages/advantagesImg');
+import('./social_block/social_block_img');
+import('./about-us/about-us.js');
+
+
 
   document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
