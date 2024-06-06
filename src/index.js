@@ -49,30 +49,30 @@ anchorLinks.forEach(anchorLink => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const nameInput = document.getElementById('name');
-    const phoneInput = document.getElementById('phone');
-    const checkbox = document.getElementById('confPolice');
-    const sendButton = document.querySelector('.send-btn');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const nameInput = document.getElementById('name');
+//     const phoneInput = document.getElementById('phone');
+//     const checkbox = document.getElementById('confPolice');
+//     const sendButton = document.querySelector('.send-btn');
   
-    checkbox.addEventListener('change', function() {
-      sendButton.disabled = !this.checked; // блокировка кнопки при выключенном чекбоксе
-      if (!this.checked) {
-        sendButton.style.backgroundColor = '#ccc'; // Изменение фона кнопки
-    } else {
-        sendButton.style.backgroundColor = ''; // Сброс изменений фона кнопки
-    }
-    });
+//     checkbox.addEventListener('change', function() {
+//       sendButton.disabled = !this.checked; // блокировка кнопки при выключенном чекбоксе
+//       if (!this.checked) {
+//         sendButton.style.backgroundColor = '#ccc'; // Изменение фона кнопки
+//     } else {
+//         sendButton.style.backgroundColor = ''; // Сброс изменений фона кнопки
+//     }
+//     });
   
-    nameInput.addEventListener('input', function() {
-      this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, ''); // Оставляем только буквы (на основе указанных символов)
-    });
+//     nameInput.addEventListener('input', function() {
+//       this.value = this.value.replace(/[^a-zA-Zа-яА-Я]/g, ''); // Оставляем только буквы (на основе указанных символов)
+//     });
   
-    phoneInput.addEventListener('input', function() {
-      this.value = this.value.replace(/\D/g, ''); // Оставляем только цифры
-    });
+//     phoneInput.addEventListener('input', function() {
+//       this.value = this.value.replace(/\D/g, ''); // Оставляем только цифры
+//     });
 
     
-  });
+//   });
 
 

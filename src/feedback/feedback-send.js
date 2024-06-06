@@ -62,8 +62,7 @@ form.addEventListener('submit', async function(event) {
             }
         } catch (error) {
             console.error('Ошибка при выполнении запроса:', error);
-            document.getElementById('name-feedback').value = ""; // Очистка поля 'name-feedback'
-            document.getElementById('phone-feedback').value = ""; // Очистка поля 'phone-feedback'
+          
         }
     } else {
         const toast = document.createElement('div');
