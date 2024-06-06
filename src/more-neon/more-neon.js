@@ -131,8 +131,8 @@ function openModal(product) {
           }
       });
 
-      // Удаляем предыдущий обработчик события, если он существует
-      submitButton.removeEventListener('click', handleSubmitData);
+    //   // Удаляем предыдущий обработчик события, если он существует
+    //   submitButton.removeEventListener('click', handleSubmitData);
 
       submitButton.addEventListener('click', handleSubmitData);
 
