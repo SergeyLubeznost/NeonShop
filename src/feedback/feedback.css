@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 .conf-feedback{
     width: 100%;
     display: flex;
@@ -61,13 +63,13 @@
   }
 
   .blur-feedback h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
-    color: #D012FF;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #3177ff;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 
     margin-top: 2%;
   }

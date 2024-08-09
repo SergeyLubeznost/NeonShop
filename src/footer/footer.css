@@ -138,6 +138,8 @@ footer{
 
 .width-check{
     width: 21%!important;
+    height: 14px !important;
+
 }
 
 .feedback-footer form button{

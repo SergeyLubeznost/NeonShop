@@ -1,7 +1,7 @@
 import './style.css';
 
 
-
+import('./main-form.js')
 import('./slider-popular/popular-slider');
 import('./slider-popular/pop-slider.css');
 import('./slider-popular/pop-slider-mobile.css');
@@ -11,6 +11,7 @@ import('./more-neon/data_products');
 import('./Our advantages/advantagesImg');
 import('./social_block/social_block_img');
 import('./about-us/about-us.js');
+import('./footer/footer.js')
 
 
 

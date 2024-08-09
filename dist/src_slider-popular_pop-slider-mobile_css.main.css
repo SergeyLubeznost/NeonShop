@@ -1,6 +1,10 @@
 /*!********************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/slider-popular/pop-slider-mobile.css ***!
   \********************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/slider-popular/pop-slider-mobile.css (1) ***!
+  \************************************************************************************************/
 @media (max-width:968px) {
     .popular-slider {
         height: 600px;
@@ -15,9 +19,8 @@
     }
     
     .blur-slider h2{
-        font-family: "Inter",sans-serif;
-        font-weight: 600;
-        color: #D012FF;
+        font-family: "Inter";
+       
         font-size: 20px;
         width: 100%;
         text-align: center;

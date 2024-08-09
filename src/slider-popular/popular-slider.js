@@ -12,15 +12,59 @@ import matreshka1 from './image-price/Матрёшка 1000х250 14500р/matresh
 import matreshka2 from './image-price/Матрёшка 1000х250 14500р/20240225_132601_11zon_10_11zon.webp'
 import least1 from './image-price/лист 250х300мм  2000р/20240314_001806_3_11zon_12_11zon.webp'
 import least2 from './image-price/лист 250х300мм  2000р/20240314_002442_2_11zon_13_11zon.webp'
+import odk1 from './image-price/одк 500х300мм 7000тр/20240618_223035_11zon_11zon.webp'
+import odk2 from './image-price/одк 500х300мм 7000тр/Снимок экрана (23).webp'
+import atele1 from './image-price/ателье 500х200мм 6000тр/20240424_211014_1_11zon_1_11zon.webp'
+import atele2 from './image-price/ателье 500х200мм 6000тр/20240424_211020_2_11zon_2_11zon.webp'
+import sigaret1 from './image-price/сигары 1000х1000. 24500р/20240415_210841_11zon_11zon.webp'
+import sigaret2 from './image-price/сигары 1000х1000. 24500р/20240415_210924_11zon_11zon.webp'
+import streetFood1 from './image-price/стрит фуд 1000х1000 28500тр/20240606_234126_11zon_11zon.webp'
+import streetFood2 from './image-price/стрит фуд 1000х1000 28500тр/20240606_234110_11zon_11zon.webp'
 
 
 
 export let popularPrice = [
   {
+    id : 1230,
+    image: odk1,
+    image2: odk2,
+    title: "ОДК",
+    discription: "прозрачное оргстекло 5 мм",
+    size: "500x300",
+    price: "7000р",
+  },
+  {
+    id : 1231,
+    image: atele1,
+    image2: atele2,
+    title: "Ателье",
+    discription: "прозрачное оргстекло 5 мм",
+    size: "500x200",
+    price: "6000р",
+  },
+  {
+    id : 1232,
+    image: sigaret1,
+    image2: sigaret2,
+    title: "Сигары",
+    discription: "прозрачное оргстекло 5 мм",
+    size: "1000x1000",
+    price: "24500р",
+  },
+  {
+    id : 1233,
+    image: streetFood1,
+    image2: streetFood2,
+    title: "Street Food",
+    discription: "прозрачное оргстекло 5 мм",
+    size: "1000x1000",
+    price: "28500р",
+  },
+  {
     id : 1234,
     image: cafePetros,
     image2: cafePetros2,
-    title: "Cafe Petros",
+    title: "Cate Petros",
     discription: "прозрачное оргстекло 5 мм",
     size: "500x350",
     price: "7300р",
@@ -195,8 +239,8 @@ function openModal(productId) {
           <form class="form-header" id="modal-form">
               <label for="namePrice">Ваше Имя</label>
               <input id="namePrice" type="text" placeholder="Введите Имя" >
-              <label for="phonePrice">Ваш телефон</label>
-              <input id="phonePrice" type="tel" placeholder="Введите телефон">
+              <label for="phonePrice" >Ваш телефон</label>
+              <input id="phonePrice" type="tel" placeholder="Введите телефон" minlength="11" maxlength="11">
           </form>
       `;
 

@@ -214,6 +214,10 @@ function updatePagination(numberOfPages) { // Обновление элемен�
       currentPage = i; // Обновление текущей страницы
       displayItems(currentPage); // Перерисовка элементов для выбранной страницы
       highlightCurrentPage(); // Выделение текущей страницы
+
+        // Прокрутка к заголовку секции
+        const header = document.querySelector('#more-neon h2'); // Находим заголовок
+        header.scrollIntoView({ behavior: 'smooth' }); // Прокручиваем к заголовку плавно
     });
     paginationWrapper.appendChild(pageButton); // Добавление кнопки в пагинацию
   }

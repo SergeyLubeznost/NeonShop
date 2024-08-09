@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @media (max-width:968px) {
     .more-neon h2{
-        font-family: "Inter",sans-serif!important;
-        font-weight: 600!important;
+        font-family: "Inter"!important;
+      
         color: #D012FF!important;
         font-size: 20px!important;
         width: 100%!important;
         text-align: center!important;
-        letter-spacing: 6px!important;
+       
     
         margin-top: 2%!important;
     }

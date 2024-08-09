@@ -10,6 +10,58 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (2) ***!
   \*********************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services.css ***!
+  \************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!*******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services-mobile.css ***!
+  \*******************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback.css ***!
+  \*****************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback-mobile.css ***!
+  \************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon-mobile.css ***!
+  \**************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon.css ***!
+  \*******************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages.css ***!
+  \****************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages-mobille.css ***!
+  \************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project.css ***!
+  \***********************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project-mobile.css ***!
+  \******************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/about-us/about-us.css ***!
+  \*****************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!*******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq.css ***!
+  \*******************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq-mobile.css ***!
+  \**************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
 /*!********************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/normalize.css/normalize.css ***!
   \********************************************************************************************/
@@ -961,9 +1013,9 @@ justify-content: space-around;
         margin-top: -7%;
     }
 }
-/*!************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services.css ***!
-  \************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services.css (1) ***!
+  \****************************************************************************************/
 .our-services{
     background-color: #080808;
     width: 100%;
@@ -975,13 +1027,13 @@ justify-content: space-around;
 }
 
 .our-services h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
-    color: #D012FF;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #3177ff;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     margin-top: 2%;
 }
 
@@ -1020,9 +1072,9 @@ justify-content: space-around;
   text-align: center;
 }
 
-/*!*******************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services-mobile.css ***!
-  \*******************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/ourServices/our-services-mobile.css (1) ***!
+  \***********************************************************************************************/
 @media (max-width:968px) {
 .our-services{
     background-color: #080808;
@@ -1036,13 +1088,12 @@ justify-content: space-around;
 
 
 .our-services h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
+    font-family: "Inter";
+
     color: #D012FF;
     font-size: 20px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
 margin-top: 20px;
 margin-bottom: 20px;
 }
@@ -1102,9 +1153,9 @@ margin-bottom: 20px;
 }
 
 }
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback.css ***!
-  \*****************************************************************************/
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback.css (1) ***!
+  \*********************************************************************************/
 .conf-feedback{
     width: 100%;
     display: flex;
@@ -1168,13 +1219,13 @@ margin-bottom: 20px;
   }
 
   .blur-feedback h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
-    color: #D012FF;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #3177ff;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 
     margin-top: 2%;
   }
@@ -1256,9 +1307,9 @@ margin-bottom: 20px;
     font-size: 0.7vw!important;
     color:#ffffff!important;
 }
-/*!************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback-mobile.css ***!
-  \************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/feedback/feedback-mobile.css (1) ***!
+  \****************************************************************************************/
 @media (max-width: 968px) {
   .conf-feedback{
     width: 90%;
@@ -1277,13 +1328,13 @@ margin-bottom: 20px;
       }
    
     .blur-feedback h2{
-        font-family: "Inter",sans-serif;
-        font-weight: 600;
-        color: #D012FF;
+        font-family: "Inter";
+        
+        
         font-size: 20px;
         width: 100%;
         text-align: center;
-        letter-spacing: 6px;
+        
     
         margin-top: 4%;
       }
@@ -1363,18 +1414,18 @@ margin-bottom: 20px;
       
     }
 }
-/*!**************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon-mobile.css ***!
-  \**************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon-mobile.css (1) ***!
+  \******************************************************************************************/
 @media (max-width:968px) {
     .more-neon h2{
-        font-family: "Inter",sans-serif!important;
-        font-weight: 600!important;
+        font-family: "Inter"!important;
+      
         color: #D012FF!important;
         font-size: 20px!important;
         width: 100%!important;
         text-align: center!important;
-        letter-spacing: 6px!important;
+       
     
         margin-top: 2%!important;
     }
@@ -1458,9 +1509,9 @@ margin-bottom: 20px;
     }
 
 }
-/*!*******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon.css ***!
-  \*******************************************************************************/
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/more-neon/more-neon.css (1) ***!
+  \***********************************************************************************/
 .more-neon{
     background-color: black;
     width: 100%;
@@ -1471,13 +1522,13 @@ margin-bottom: 20px;
 }
 
 .more-neon h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
-    color: #D012FF;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #3177ff;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 
     margin-top: 2%;
 }
@@ -1568,10 +1619,9 @@ margin-bottom: 20px;
     margin-right: 18px;
     margin-bottom: 25px;
 }
-/*!****************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages.css ***!
-  \****************************************************************************************/
-
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages.css (1) ***!
+  \********************************************************************************************/
 .our-advantages{
     background-color: #080808;
     display: flex;
@@ -1581,13 +1631,13 @@ margin-bottom: 20px;
 }
 
 .our-advantages h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
-    color: #D012FF;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #3177ff;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 
     margin-top: 2%;
 }
@@ -1634,19 +1684,19 @@ margin-bottom: 20px;
     text-align: center;
 }
 
-/*!************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages-mobille.css ***!
-  \************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Our advantages/ourAdvantages-mobille.css (1) ***!
+  \****************************************************************************************************/
 @media (max-width:968px) {
 
     .our-advantages h2{
-        font-family: "Inter",sans-serif !important;
-        font-weight: 600 !important;
-        color: #D012FF !important;
+        font-family: "Inter" !important;
+        
+        color: #3177ff !important;
         font-size: 20px !important;
         width: 100% !important;
         text-align: center !important;
-        letter-spacing: 6px !important;
+      
     
         margin-top: 2% !important;
     }
@@ -1774,9 +1824,9 @@ margin-bottom: 20px;
     margin-right: 10px;
 }
 }
-/*!***********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project.css ***!
-  \***********************************************************************************/
+/*!***************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project.css (1) ***!
+  \***************************************************************************************/
 .our-project{
     background: #131313;
     width: 100%;
@@ -1787,13 +1837,13 @@ margin-bottom: 20px;
     padding-bottom: 30px;
 }
 .our-project h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
-    color: #D012FF;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #3177ff;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     margin-top: 2%;
 }
 
@@ -1819,19 +1869,19 @@ margin-bottom: 20px;
   }
 
 
-/*!******************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project-mobile.css ***!
-  \******************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/our-project/our-project-mobile.css (1) ***!
+  \**********************************************************************************************/
 @media (max-width:968px) {
 
 .our-project h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
+    font-family: "Inter";
+
     color: #D012FF;
     font-size: 20px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+  
     position: relative;
     top: 2%;
 }
@@ -1854,9 +1904,9 @@ margin-bottom: 20px;
     margin-right: 0px;
   }
 }
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/about-us/about-us.css ***!
-  \*****************************************************************************/
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/about-us/about-us.css (1) ***!
+  \*********************************************************************************/
 .about-us{
     background-image: url(89c670f0a1097d29bb05.png); 
     background-repeat: no-repeat;
@@ -1877,13 +1927,13 @@ align-items: center;
 }
 
 .blur-about-us h2{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
+    font-family: "Inter";
+    font-weight: 700;
     color: #D012FF;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 
     margin-top: 2%;
 }
@@ -1943,7 +1993,7 @@ align-items: center;
       
         font-size:20px!important;
        
-        letter-spacing: 6px!important;
+        color: #3177ff !important;
     
         margin-top: 2%!important;
     }
@@ -1978,9 +2028,9 @@ align-items: center;
    display: none;
     }
 }
-/*!*******************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq.css ***!
-  \*******************************************************************/
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq.css (1) ***!
+  \***********************************************************************/
 .accordion-button::after {
     flex-shrink: 0;
     width: 3.25rem;
@@ -1999,7 +2049,7 @@ align-items: center;
 
 .accordion-button:not(.collapsed)::after {
     background-image: url(5e4d0f50a2f73281a010.svg);
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
 }
 
 .bottom-faq{
@@ -2013,13 +2063,13 @@ align-items: center;
     min-height: 573px;
 }
 .faq-section .title-faq{
-    font-family: "Inter",sans-serif;
-    font-weight: 600;
-    color: #D012FF;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #3177ff;
     font-size: 32px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 
     margin-top: 2%;
 }
@@ -2066,9 +2116,9 @@ button:focus:not(:focus-visible) {
     outline: none;
 }
 
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq-mobile.css ***!
-  \**************************************************************************/
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/FAQ/faq-mobile.css (1) ***!
+  \******************************************************************************/
 @media (max-width:968px) {
 
     .faq-section{
@@ -2079,13 +2129,13 @@ button:focus:not(:focus-visible) {
         min-height: 500px;
     }
 .faq-section .title-faq{
-    font-family: "Inter",sans-serif;
+    font-family: "Inter";
     font-weight: 600;
     color: #D012FF;
     font-size: 20px;
     width: 100%;
     text-align: center;
-    letter-spacing: 6px;
+
 
     margin-top: 2%;
 }
@@ -2255,6 +2305,8 @@ footer{
 
 .width-check{
     width: 21%!important;
+    height: 14px !important;
+
 }
 
 .feedback-footer form button{
